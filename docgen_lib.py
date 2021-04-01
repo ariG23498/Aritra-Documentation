@@ -35,7 +35,7 @@ def build(git_hash, code_url_prefix, output_dir):
     build_api_docs(git_hash, code_url_prefix, output_dir)
 
 
-def build_docs(name_pair, output_dir, code_url_prefix, search_hints, gen_report):
+def build_docs(name_pair, output_dir, code_url_prefix):
     """Build api docs for W&B.
 
     Args:
@@ -51,10 +51,10 @@ def build_docs(name_pair, output_dir, code_url_prefix, search_hints, gen_report)
         root_title="W&B",
         py_modules=[name_pair],
         base_dir=os.path.dirname(wandb.__file__),
-        search_hints=search_hints,
         code_url_prefix=code_url_prefix,
         site_path="",
-        gen_report=gen_report,
+        search_hints=False,
+        gen_report=False,
         yaml_toc=False,
     )
 
@@ -96,8 +96,6 @@ def build_library_docs(git_hash, code_url_prefix, output_dir):
         name_pair=(DIRNAME, wandb),
         output_dir=output_dir,
         code_url_prefix=code_url_prefix,
-        search_hints=False,
-        gen_report=False,
     )
 
 
@@ -110,8 +108,6 @@ def build_datatype_docs(git_hash, code_url_prefix, output_dir):
         name_pair=("data-types", wandb),
         output_dir=os.path.join(output_dir, DIRNAME),
         code_url_prefix=code_url_prefix,
-        search_hints=False,
-        gen_report=False,
     )
 
 
@@ -148,8 +144,6 @@ def build_api_docs(git_hash, code_url_prefix, output_dir):
         name_pair=("public-api", wandb),
         output_dir=os.path.join(output_dir, DIRNAME),
         code_url_prefix=code_url_prefix,
-        search_hints=False,
-        gen_report=False,
     )
 
 
