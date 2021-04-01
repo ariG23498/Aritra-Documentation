@@ -22,5 +22,6 @@ python generate.py --help
 
 ### Requirements
 
-*  `pip install git+git://github.com/ariG23498/docs.git@wandb-docs` 
-
+* `git clone https://github.com/ariG23498/docugen.git`
+* `cd docugen`
+* `pip install .` 
