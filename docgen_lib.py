@@ -1,7 +1,7 @@
 import os
 
-from tensorflow_docs.api_generator import doc_controls
-from tensorflow_docs.api_generator import generate_lib
+from docugen import doc_controls
+from docugen import generate_lib
 import wandb
 
 DIRNAME = "library"
