@@ -53,9 +53,6 @@ def build_docs(name_pair, output_dir, code_url_prefix):
         base_dir=os.path.dirname(wandb.__file__),
         code_url_prefix=code_url_prefix,
         site_path="",
-        # gen_report=False,
-        # search_hints=False,
-        # yaml_toc=False,
     )
 
     doc_generator.build(output_dir)
