@@ -52,9 +52,9 @@ def build_docs(name_pair, output_dir, code_url_prefix):
         py_modules=[name_pair],
         base_dir=os.path.dirname(wandb.__file__),
         code_url_prefix=code_url_prefix,
-        # gen_report=False,
         site_path="",
-        search_hints=False,
+        # gen_report=False,
+        # search_hints=False,
         yaml_toc=False,
     )
 
