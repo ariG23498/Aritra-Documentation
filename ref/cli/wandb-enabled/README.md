@@ -12,5 +12,6 @@ Enable W&B.
 **Options**
 | **Options** | **Description** |
 |:--|:--|:--|
+|--help|Show this message and exit.|
 
 
