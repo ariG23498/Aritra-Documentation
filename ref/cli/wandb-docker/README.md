@@ -30,12 +30,11 @@ command, see the wandb docker-run command.
 |:--|:--|:--|
 |--nvidia / --no-nvidia|Use the nvidia runtime, defaults to nvidia if|
 |--digest|Output the image digest and exit|
-|--jupyter / --no-jupyter|Run jupyter lab in the container|
-|--dir TEXT|Which directory to mount the code in the container|
+|--dir|Which directory to mount the code in the container|
 |--no-dir|Don't mount the current directory|
-|--shell TEXT|The shell to start the container with|
-|--port TEXT|The host port to bind jupyter on|
-|--cmd TEXT|The command to run in the container|
+|--shell|The shell to start the container with|
+|--port|The host port to bind jupyter on|
+|--cmd|The command to run in the container|
 |--no-tty|Run the command without a tty|
 |--help|Show this message and exit.|
 

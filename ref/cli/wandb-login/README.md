@@ -13,9 +13,8 @@ Login to Weights & Biases
 | **Options** | **Description** |
 |:--|:--|:--|
 |--cloud|Login to the cloud instead of local|
-|--host TEXT|Login to a specific instance of W&B|
+|--host|Login to a specific instance of W&B|
 |--relogin|Force relogin if already logged in.|
-|--anonymously|Log in anonymously|
 |--help|Show this message and exit.|
 
 

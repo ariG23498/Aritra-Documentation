@@ -9,7 +9,6 @@
 **Options**
 | **Options** | **Description** |
 |:--|:--|:--|
-|--version|Show the version and exit.|
 |--help|Show this message and exit.|
 
 
@@ -18,10 +17,8 @@
 |:--|:--|:--|
 |agent|Run the W&B agent|
 |artifact|Commands for interacting with artifacts|
-|controller|Run the W&B local sweep controller|
 |disabled|Disable W&B.|
 |docker|docker lets you run your code in a docker image ensuring...|
-|docker-run|Simple wrapper for `docker run` which sets W&B environment...|
 |enabled|Enable W&B.|
 |init|Configure a directory with Weights & Biases|
 |local|Launch local W&B container (Experimental)|

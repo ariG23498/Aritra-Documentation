@@ -12,7 +12,7 @@ List all artifacts in a wandb project
 **Options**
 | **Options** | **Description** |
 |:--|:--|:--|
-|-t, --type TEXT|The type of artifacts to list|
+|-t, --type|The type of artifacts to list|
 |--help|Show this message and exit.|
 
 
