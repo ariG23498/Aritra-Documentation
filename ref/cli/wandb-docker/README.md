@@ -28,7 +28,7 @@ command, see the wandb docker-run command.
 **Options**
 | **Options** | **Description** |
 |:--|:--|:--|
-|--nvidia / --no-nvidia|Use the nvidia runtime, defaults to nvidia if|
+|--nvidia / --no-nvidia|Use the nvidia runtime, defaults to nvidia if nvidia-docker is present|
 |--digest|Output the image digest and exit|
 |--jupyter / --no-jupyter|Run jupyter lab in the container|
 |--dir|Which directory to mount the code in the container|
