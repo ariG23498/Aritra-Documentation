@@ -1,18 +1,17 @@
-# wandb artifact ls
+# wandb-artifact-ls
 
 **Usage**
 
-` wandb artifact ls [OPTIONS] PATH`
+`wandb artifact ls [OPTIONS] PATH`
 
 **Summary**
 
 List all artifacts in a wandb project
 
-
 **Options**
-| **Options** | **Description** |
-|:--|:--|:--|
-|-t, --type|The type of artifacts to list|
-|--help|Show this message and exit.|
 
+| **Options** | **Description** |
+| :--- | :--- |
+| -t, --type | The type of artifacts to list |
+| --help | Show this message and exit. |
 
