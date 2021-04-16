@@ -2,15 +2,16 @@
 
 **Usage**
 
-`wandb offline [OPTIONS]`
+` wandb offline [OPTIONS]`
 
 **Summary**
 
 Disable W&B sync
 
-**Options**
 
+**Options**
 | **Options** | **Description** |
-| :--- | :--- |
-| --help | Show this message and exit. |
+|:--|:--|:--|
+|--help|Show this message and exit.|
+
 

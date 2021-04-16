@@ -2,15 +2,16 @@
 
 **Usage**
 
-`wandb online [OPTIONS]`
+` wandb online [OPTIONS]`
 
 **Summary**
 
 Enable W&B sync
 
-**Options**
 
+**Options**
 | **Options** | **Description** |
-| :--- | :--- |
-| --help | Show this message and exit. |
+|:--|:--|:--|
+|--help|Show this message and exit.|
+
 
