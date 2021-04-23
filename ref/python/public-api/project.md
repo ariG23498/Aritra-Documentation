@@ -23,14 +23,7 @@ A project is a namespace for runs
 <table>
 <tr><th>Attributes</th></tr>
 
-<tr>
-<td>
-<code>path</code>
-</td>
-<td>
 
-</td>
-</tr>
 </table>
 
 

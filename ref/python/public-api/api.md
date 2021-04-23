@@ -50,35 +50,7 @@ You can also set defaults for <code>entity</code>, <code>project</code>, and <co
 <table>
 <tr><th>Attributes</th></tr>
 
-<tr>
-<td>
-<code>api_key</code>
-</td>
-<td>
 
-</td>
-</tr><tr>
-<td>
-<code>client</code>
-</td>
-<td>
-
-</td>
-</tr><tr>
-<td>
-<code>default_entity</code>
-</td>
-<td>
-
-</td>
-</tr><tr>
-<td>
-<code>user_agent</code>
-</td>
-<td>
-
-</td>
-</tr>
 </table>
 
 

@@ -29,49 +29,7 @@ api.sweep(sweep_path)
 <table>
 <tr><th>Attributes</th></tr>
 
-<tr>
-<td>
-<code>config</code>
-</td>
-<td>
 
-</td>
-</tr><tr>
-<td>
-<code>entity</code>
-</td>
-<td>
-
-</td>
-</tr><tr>
-<td>
-<code>order</code>
-</td>
-<td>
-
-</td>
-</tr><tr>
-<td>
-<code>path</code>
-</td>
-<td>
-
-</td>
-</tr><tr>
-<td>
-<code>url</code>
-</td>
-<td>
-
-</td>
-</tr><tr>
-<td>
-<code>username</code>
-</td>
-<td>
-
-</td>
-</tr>
 </table>
 
 

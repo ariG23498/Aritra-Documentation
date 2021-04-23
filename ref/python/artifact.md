@@ -155,13 +155,6 @@ then <code>log_artifact</code> is a no-op.
 </td>
 </tr><tr>
 <td>
-<code>distributed_id</code>
-</td>
-<td>
-
-</td>
-</tr><tr>
-<td>
 <code>entity</code>
 </td>
 <td>

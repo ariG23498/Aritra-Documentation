@@ -61,26 +61,12 @@ value pairs associated with the hyperparameters of the run.
 </td>
 </tr><tr>
 <td>
-<code>config_static</code>
-</td>
-<td>
-
-</td>
-</tr><tr>
-<td>
 <code>dir</code>
 </td>
 <td>
 Returns:
 (str): The directory where all of the files associated with the run are
 placed.
-</td>
-</tr><tr>
-<td>
-<code>disabled</code>
-</td>
-<td>
-
 </td>
 </tr><tr>
 <td>
@@ -112,13 +98,6 @@ id property.
 </td>
 </tr><tr>
 <td>
-<code>job_type</code>
-</td>
-<td>
-
-</td>
-</tr><tr>
-<td>
 <code>mode</code>
 </td>
 <td>
@@ -141,13 +120,6 @@ and ideally is descriptive.
 Returns:
 (str): notes associated with the run. Notes can be a multiline string
 and can also use markdown and latex equations inside $$ like $\\{x}
-</td>
-</tr><tr>
-<td>
-<code>offline</code>
-</td>
-<td>
-
 </td>
 </tr><tr>
 <td>
