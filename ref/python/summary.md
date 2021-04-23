@@ -1,22 +1,38 @@
-# wandb.summary
+# summary
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_summary.py#L82-L132)
 
-Summary tracks single values for each run. By default, summary is set to the last value of History.
 
-```text
-summary(
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_summary.py#L82-L133)
+
+
+
+
+Summary tracks single values for each run. By default, summary is set to the
+
+<pre><code>summary(
     get_current_summary_callback: t.Callable
-)
-```
+)</code></pre>
 
-For example, `wandb.log({'accuracy': 0.9})` will add a new step to History and update Summary to the latest value. In some cases, it's more useful to have the maximum or minimum of a metric instead of the final value. You can set history manually `(wandb.summary['accuracy'] = best_acc)`.
 
-In the UI, summary metrics appear in the table to compare across runs. Summary metrics are also used in visualizations like the scatter plot and parallel coordinates chart.
 
-After training has completed, you may want to save evaluation metrics to a run. Summary can handle numpy arrays and PyTorch/TensorFlow tensors. When you save one of these types to Summary, we persist the entire tensor in a binary file and store high level metrics in the summary object, such as min, mean, variance, and 95th percentile.
+last value of History.
 
-## Examples:
+For example, `wandb.log({'accuracy': 0.9})` will add a new step to History and
+update Summary to the latest value. In some cases, it's more useful to have
+the maximum or minimum of a metric instead of the final value. You can set
+history manually `(wandb.summary['accuracy'] = best_acc)`.
+
+In the UI, summary metrics appear in the table to compare across runs.
+Summary metrics are also used in visualizations like the scatter plot and
+parallel coordinates chart.
+
+After training has completed, you may want to save evaluation metrics to a
+run. Summary can handle numpy arrays and PyTorch/TensorFlow tensors. When
+you save one of these types to Summary, we persist the entire tensor in a
+binary file and store high level metrics in the summary object, such as min,
+mean, variance, and 95th percentile.
+
+#### Examples:
 
 ```python
 wandb.init(config=args)
@@ -28,4 +44,3 @@ if (test_accuracy > best_accuracy):
     wandb.run.summary["best_accuracy"] = test_accuracy
     best_accuracy = test_accuracy
 ```
-

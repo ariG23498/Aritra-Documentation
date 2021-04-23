@@ -1,4 +1,4 @@
-# wandb-restore
+# wandb restore
 
 **Usage**
 
@@ -10,7 +10,7 @@ Restore code, config and docker state for a run
 
 **Options**
 
-| **Options** | **Description** |
+| **Option** | **Description** |
 | :--- | :--- |
 | --no-git | Skupp |
 | --branch / --no-branch | Whether to create a branch or checkout detached |

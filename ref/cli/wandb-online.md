@@ -1,4 +1,4 @@
-# wandb-online
+# wandb online
 
 **Usage**
 
@@ -10,7 +10,7 @@ Enable W&B sync
 
 **Options**
 
-| **Options** | **Description** |
+| **Option** | **Description** |
 | :--- | :--- |
 | --help | Show this message and exit. |
 

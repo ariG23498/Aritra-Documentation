@@ -1,4 +1,4 @@
-# wandb-artifact-ls
+# wandb artifact ls
 
 **Usage**
 
@@ -10,7 +10,7 @@ List all artifacts in a wandb project
 
 **Options**
 
-| **Options** | **Description** |
+| **Option** | **Description** |
 | :--- | :--- |
 | -t, --type | The type of artifacts to list |
 | --help | Show this message and exit. |

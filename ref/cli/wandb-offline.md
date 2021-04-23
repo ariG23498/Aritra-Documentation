@@ -1,4 +1,4 @@
-# wandb-offline
+# wandb offline
 
 **Usage**
 
@@ -10,7 +10,7 @@ Disable W&B sync
 
 **Options**
 
-| **Options** | **Description** |
+| **Option** | **Description** |
 | :--- | :--- |
 | --help | Show this message and exit. |
 
