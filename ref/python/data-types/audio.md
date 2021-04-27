@@ -2,7 +2,7 @@
 
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/data_types.py#L876-L1020)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.27/wandb/data_types.py#L883-L1027)
 
 
 
@@ -53,7 +53,7 @@ numpy array of audio data.
 
 <h3 id="durations"><code>durations</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/data_types.py#L978-L980">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/data_types.py#L985-L987">View source</a>
 
 <pre><code>@classmethod</code>
 <code>durations(
@@ -65,7 +65,7 @@ numpy array of audio data.
 
 <h3 id="path_is_reference"><code>path_is_reference</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/data_types.py#L921-L923">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/data_types.py#L928-L930">View source</a>
 
 <pre><code>@classmethod</code>
 <code>path_is_reference(
@@ -77,7 +77,7 @@ numpy array of audio data.
 
 <h3 id="resolve_ref"><code>resolve_ref</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/data_types.py#L994-L1006">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/data_types.py#L1001-L1013">View source</a>
 
 <pre><code>resolve_ref()</code></pre>
 
@@ -86,7 +86,7 @@ numpy array of audio data.
 
 <h3 id="sample_rates"><code>sample_rates</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/data_types.py#L982-L984">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/data_types.py#L989-L991">View source</a>
 
 <pre><code>@classmethod</code>
 <code>sample_rates(

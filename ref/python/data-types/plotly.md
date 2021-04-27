@@ -2,7 +2,7 @@
 
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/data_types.py#L1995-L2042)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/data_types.py#L1995-L2042)
 
 
 
@@ -37,7 +37,7 @@ matplotlib or plotly figure
 
 <h3 id="make_plot_media"><code>make_plot_media</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/data_types.py#L2003-L2011">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/data_types.py#L2003-L2011">View source</a>
 
 <pre><code>@classmethod</code>
 <code>make_plot_media(

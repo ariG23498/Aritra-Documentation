@@ -3,7 +3,7 @@
 <!-- Insert buttons and diff -->
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/__init__.py)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.27/wandb/__init__.py)
 
 
 
@@ -32,11 +32,11 @@
 
 [`save(...)`](./save.md): Ensure all files matching *glob_str* are synced to wandb with the policy specified.
 
-[`setup(...)`](./setup.md)
-
 [`summary(...)`](./summary.md): Summary tracks single values for each run. By default, summary is set to the
 
 [`sweep(...)`](./sweep.md)
+
+[`watch(...)`](./watch.md): Hooks into the torch model to collect gradients and the topology.  Should be extended
 
 
 
@@ -49,7 +49,7 @@
 __version__<a id="__version__"></a>
 </td>
 <td>
-`'0.10.28.dev1'`
+`'0.10.27'`
 </td>
 </tr>
 </table>
