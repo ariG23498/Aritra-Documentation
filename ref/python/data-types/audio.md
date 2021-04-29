@@ -2,7 +2,7 @@
 
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.27/wandb/data_types.py#L883-L1027)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L877-L1021)
 
 
 
@@ -53,7 +53,7 @@ numpy array of audio data.
 
 <h3 id="durations"><code>durations</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/data_types.py#L985-L987">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L979-L981">View source</a>
 
 <pre><code>@classmethod</code>
 <code>durations(
@@ -65,7 +65,7 @@ numpy array of audio data.
 
 <h3 id="path_is_reference"><code>path_is_reference</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/data_types.py#L928-L930">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L922-L924">View source</a>
 
 <pre><code>@classmethod</code>
 <code>path_is_reference(
@@ -77,7 +77,7 @@ numpy array of audio data.
 
 <h3 id="resolve_ref"><code>resolve_ref</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/data_types.py#L1001-L1013">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L995-L1007">View source</a>
 
 <pre><code>resolve_ref()</code></pre>
 
@@ -86,7 +86,7 @@ numpy array of audio data.
 
 <h3 id="sample_rates"><code>sample_rates</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/data_types.py#L989-L991">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L983-L985">View source</a>
 
 <pre><code>@classmethod</code>
 <code>sample_rates(
@@ -97,20 +97,4 @@ numpy array of audio data.
 
 
 
-
-
-
-<!-- Tabular view -->
-<table>
-<tr><th>Class Variables</th></tr>
-
-<tr>
-<td>
-artifact_type<a id="artifact_type"></a>
-</td>
-<td>
-`'audio-file'`
-</td>
-</tr>
-</table>
 

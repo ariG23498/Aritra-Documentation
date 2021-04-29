@@ -2,12 +2,12 @@
 
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.27/wandb/apis/public.py#L1584-L1647)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L1589-L1652)
 
 
 
 
-Files is an iterable collection of <code>File</code> objects.
+An iterable collection of <code>File</code> objects.
 
 <pre><code>Files(
     client, run, names=[], per_page=50, upload=(False)

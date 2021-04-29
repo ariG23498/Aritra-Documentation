@@ -3,7 +3,7 @@
 <!-- Insert buttons and diff -->
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.27/wandb/__init__.py)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.28/wandb/__init__.py)
 
 
 
@@ -23,13 +23,13 @@ See the [Generated Reference Docs](../ref/public-api/) for details on available 
 
 [`class Api`](./api.md): Used for querying the wandb server.
 
-[`class Artifact`](./artifact.md): An artifact that has been logged, including all its attributes, links to the runs
+[`class Artifact`](./artifact.md): A wandb Artifact.
 
 [`class File`](./file.md): File is a class associated with a file saved by wandb.
 
-[`class Files`](./files.md): Files is an iterable collection of <code>File</code> objects.
+[`class Files`](./files.md): An iterable collection of <code>File</code> objects.
 
-[`class Project`](./project.md): A project is a namespace for runs
+[`class Project`](./project.md): A project is a namespace for runs.
 
 [`class Projects`](./projects.md): An iterable collection of <code>Project</code> objects.
 
@@ -37,5 +37,5 @@ See the [Generated Reference Docs](../ref/public-api/) for details on available 
 
 [`class Runs`](./runs.md): An iterable collection of runs associated with a project and optional filter.
 
-[`class Sweep`](./sweep.md): A set of runs associated with a sweep
+[`class Sweep`](./sweep.md): A set of runs associated with a sweep.
 

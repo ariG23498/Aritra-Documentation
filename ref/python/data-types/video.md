@@ -2,7 +2,7 @@
 
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/data_types.py#L966-L1144)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/data_types.py#L968-L1146)
 
 
 
@@ -68,7 +68,7 @@ Channels should be (time, channel, height, width) or
 
 <h3 id="encode"><code>encode</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/data_types.py#L1035-L1072">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/data_types.py#L1037-L1074">View source</a>
 
 <pre><code>encode() -> None</code></pre>
 
@@ -89,13 +89,6 @@ EXTS<a id="EXTS"></a>
 </td>
 <td>
 
-</td>
-</tr><tr>
-<td>
-artifact_type<a id="artifact_type"></a>
-</td>
-<td>
-`'video-file'`
 </td>
 </tr>
 </table>

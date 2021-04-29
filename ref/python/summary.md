@@ -2,12 +2,12 @@
 
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_summary.py#L82-L133)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_summary.py#L82-L134)
 
 
 
 
-Summary tracks single values for each run. By default, summary is set to the
+Tracks single values for each metric for each run.
 
 <pre><code>summary(
     get_current_summary_callback: t.Callable
@@ -15,7 +15,8 @@ Summary tracks single values for each run. By default, summary is set to the
 
 
 
-last value of History.
+
+By default, a metric's summary is the last value of its History.
 
 For example, `wandb.log({'accuracy': 0.9})` will add a new step to History and
 update Summary to the latest value. In some cases, it's more useful to have

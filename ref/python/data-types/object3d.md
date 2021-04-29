@@ -2,7 +2,7 @@
 
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/data_types.py#L594-L775)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/data_types.py#L595-L776)
 
 
 
@@ -56,13 +56,6 @@ SUPPORTED_TYPES<a id="SUPPORTED_TYPES"></a>
 </td>
 <td>
 
-</td>
-</tr><tr>
-<td>
-artifact_type<a id="artifact_type"></a>
-</td>
-<td>
-`'object3D-file'`
 </td>
 </tr>
 </table>

@@ -2,7 +2,7 @@
 
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.27/wandb/integration/keras/keras.py#L214-L885)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L214-L885)
 
 
 
@@ -158,7 +158,7 @@ processors where appropriate.
 
 <h3 id="on_batch_begin"><code>on_batch_begin</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/integration/keras/keras.py#L511-L512">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L511-L512">View source</a>
 
 <pre><code>on_batch_begin(
     batch, logs=None
@@ -169,7 +169,7 @@ A backwards compatibility alias for <code>on_train_batch_begin</code>.
 
 <h3 id="on_batch_end"><code>on_batch_end</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/integration/keras/keras.py#L515-L522">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L515-L522">View source</a>
 
 <pre><code>on_batch_end(
     batch, logs=None
@@ -215,7 +215,7 @@ but that may change in the future.
 
 <h3 id="on_epoch_end"><code>on_epoch_end</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/integration/keras/keras.py#L454-L508">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L454-L508">View source</a>
 
 <pre><code>on_epoch_end(
     epoch, logs={}
@@ -254,7 +254,7 @@ are prefixed with <code>val_</code>. For training epoch, the values of the
 
 <h3 id="on_predict_batch_begin"><code>on_predict_batch_begin</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/integration/keras/keras.py#L613-L614">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L613-L614">View source</a>
 
 <pre><code>on_predict_batch_begin(
     batch, logs=None
@@ -295,7 +295,7 @@ the model's outputs.
 
 <h3 id="on_predict_batch_end"><code>on_predict_batch_end</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/integration/keras/keras.py#L616-L617">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L616-L617">View source</a>
 
 <pre><code>on_predict_batch_end(
     batch, logs=None
@@ -334,7 +334,7 @@ Dict. Aggregated metric results up until this batch.
 
 <h3 id="on_predict_begin"><code>on_predict_begin</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/integration/keras/keras.py#L607-L608">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L607-L608">View source</a>
 
 <pre><code>on_predict_begin(
     logs=None
@@ -363,7 +363,7 @@ but that may change in the future.
 
 <h3 id="on_predict_end"><code>on_predict_end</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/integration/keras/keras.py#L610-L611">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L610-L611">View source</a>
 
 <pre><code>on_predict_end(
     logs=None
@@ -392,7 +392,7 @@ but that may change in the future.
 
 <h3 id="on_test_batch_begin"><code>on_test_batch_begin</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/integration/keras/keras.py#L601-L602">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L601-L602">View source</a>
 
 <pre><code>on_test_batch_begin(
     batch, logs=None
@@ -436,7 +436,7 @@ the values of the <code>Model</code>'s metrics are returned.  Example:
 
 <h3 id="on_test_batch_end"><code>on_test_batch_end</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/integration/keras/keras.py#L604-L605">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L604-L605">View source</a>
 
 <pre><code>on_test_batch_end(
     batch, logs=None
@@ -478,7 +478,7 @@ Dict. Aggregated metric results up until this batch.
 
 <h3 id="on_test_begin"><code>on_test_begin</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/integration/keras/keras.py#L595-L596">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L595-L596">View source</a>
 
 <pre><code>on_test_begin(
     logs=None
@@ -507,7 +507,7 @@ but that may change in the future.
 
 <h3 id="on_test_end"><code>on_test_end</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/integration/keras/keras.py#L598-L599">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L598-L599">View source</a>
 
 <pre><code>on_test_end(
     logs=None
@@ -537,7 +537,7 @@ but that may change in the future.
 
 <h3 id="on_train_batch_begin"><code>on_train_batch_begin</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/integration/keras/keras.py#L524-L525">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L524-L525">View source</a>
 
 <pre><code>on_train_batch_begin(
     batch, logs=None
@@ -578,7 +578,7 @@ the values of the <code>Model</code>'s metrics are returned.  Example:
 
 <h3 id="on_train_batch_end"><code>on_train_batch_end</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/integration/keras/keras.py#L527-L534">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L527-L534">View source</a>
 
 <pre><code>on_train_batch_end(
     batch, logs=None
@@ -617,7 +617,7 @@ Dict. Aggregated metric results up until this batch.
 
 <h3 id="on_train_begin"><code>on_train_begin</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/integration/keras/keras.py#L548-L590">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L548-L590">View source</a>
 
 <pre><code>on_train_begin(
     logs=None
@@ -646,7 +646,7 @@ but that may change in the future.
 
 <h3 id="on_train_end"><code>on_train_end</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/integration/keras/keras.py#L592-L593">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L592-L593">View source</a>
 
 <pre><code>on_train_end(
     logs=None
@@ -676,7 +676,7 @@ the future.
 
 <h3 id="set_model"><code>set_model</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/integration/keras/keras.py#L443-L452">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L443-L452">View source</a>
 
 <pre><code>set_model(
     model
@@ -687,7 +687,7 @@ the future.
 
 <h3 id="set_params"><code>set_params</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/integration/keras/keras.py#L440-L441">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L440-L441">View source</a>
 
 <pre><code>set_params(
     params

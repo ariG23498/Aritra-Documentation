@@ -3,7 +3,7 @@
 <!-- Insert buttons and diff -->
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.27/wandb/__init__.py)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.28/wandb/__init__.py)
 
 
 
@@ -14,9 +14,9 @@
 
 ## Classes
 
-[`class Artifact`](./artifact.md): Constructs an empty artifact whose contents can be populated using its
+[`class Artifact`](./artifact.md): Flexible and lightweight building block for dataset and model versioning.
 
-[`class Run`](./run.md): The run object corresponds to a single execution of your script,
+[`class Run`](./run.md): A unit of computation logged by wandb. Typically this is an ML experiment.
 
 ## Functions
 
@@ -32,7 +32,7 @@
 
 [`save(...)`](./save.md): Ensure all files matching *glob_str* are synced to wandb with the policy specified.
 
-[`summary(...)`](./summary.md): Summary tracks single values for each run. By default, summary is set to the
+[`summary(...)`](./summary.md): Tracks single values for each metric for each run.
 
 [`sweep(...)`](./sweep.md)
 
@@ -49,7 +49,7 @@
 __version__<a id="__version__"></a>
 </td>
 <td>
-`'0.10.27'`
+`'0.10.28'`
 </td>
 </tr>
 </table>

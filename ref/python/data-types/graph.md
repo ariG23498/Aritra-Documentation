@@ -2,7 +2,7 @@
 
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.27/wandb/data_types.py#L1223-L1381)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L1217-L1377)
 
 
 
@@ -33,7 +33,7 @@ Import a keras model:
 
 <h3 id="add_edge"><code>add_edge</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/data_types.py#L1307-L1311">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L1303-L1307">View source</a>
 
 <pre><code>add_edge(
     from_node, to_node
@@ -44,7 +44,7 @@ Import a keras model:
 
 <h3 id="add_node"><code>add_node</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/data_types.py#L1293-L1305">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L1289-L1301">View source</a>
 
 <pre><code>add_node(
     node=None, **node_kwargs
@@ -55,7 +55,7 @@ Import a keras model:
 
 <h3 id="from_keras"><code>from_keras</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/data_types.py#L1313-L1342">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L1309-L1338">View source</a>
 
 <pre><code>@classmethod</code>
 <code>from_keras(
@@ -67,7 +67,7 @@ Import a keras model:
 
 <h3 id="pprint"><code>pprint</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/data_types.py#L1287-L1291">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L1283-L1287">View source</a>
 
 <pre><code>pprint()</code></pre>
 
@@ -76,7 +76,7 @@ Import a keras model:
 
 <h3 id="__getitem__"><code>__getitem__</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/data_types.py#L1284-L1285">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L1280-L1281">View source</a>
 
 <pre><code>__getitem__(
     nid
@@ -86,20 +86,4 @@ Import a keras model:
 
 
 
-
-
-
-<!-- Tabular view -->
-<table>
-<tr><th>Class Variables</th></tr>
-
-<tr>
-<td>
-artifact_type<a id="artifact_type"></a>
-</td>
-<td>
-<code>None</code>
-</td>
-</tr>
-</table>
 

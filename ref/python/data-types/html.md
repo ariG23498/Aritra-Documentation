@@ -2,7 +2,7 @@
 
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/data_types.py#L873-L963)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/data_types.py#L875-L965)
 
 
 
@@ -46,7 +46,7 @@ to False the HTML will pass through unchanged.
 
 <h3 id="inject_head"><code>inject_head</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/data_types.py#L915-L930">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/data_types.py#L917-L932">View source</a>
 
 <pre><code>inject_head() -> None</code></pre>
 
@@ -54,20 +54,4 @@ to False the HTML will pass through unchanged.
 
 
 
-
-
-
-<!-- Tabular view -->
-<table>
-<tr><th>Class Variables</th></tr>
-
-<tr>
-<td>
-artifact_type<a id="artifact_type"></a>
-</td>
-<td>
-`'html-file'`
-</td>
-</tr>
-</table>
 

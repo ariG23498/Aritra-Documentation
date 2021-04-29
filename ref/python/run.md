@@ -2,12 +2,12 @@
 
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L179-L2319)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L208-L2349)
 
 
 
 
-The run object corresponds to a single execution of your script,
+A unit of computation logged by wandb. Typically this is an ML experiment.
 
 <pre><code>Run(
     settings: Settings,
@@ -17,10 +17,11 @@ The run object corresponds to a single execution of your script,
 
 
 
-typically this is an ML experiment. Create a run with <code>wandb.init()</code>.
 
-In distributed training, use <code>wandb.init()</code> to create a run for each process,
-and set the group argument to organize runs into a larger experiment.
+Create a run with <code>wandb.init()</code>.
+
+In distributed training, use <code>wandb.init()</code> to create a run for
+each process, and set the group argument to organize runs into a larger experiment.
 
 Currently there is a parallel Run object in the wandb.Api. Eventually these
 two objects will be merged.
@@ -202,7 +203,7 @@ Returns:
 
 <h3 id="alert"><code>alert</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L2270-L2306">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L2300-L2336">View source</a>
 
 <pre><code>alert(
     title: str,
@@ -254,7 +255,7 @@ alert with this title.
 
 <h3 id="define_metric"><code>define_metric</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L1884-L1976">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L1914-L2006">View source</a>
 
 <pre><code>define_metric(
     name: str,
@@ -341,7 +342,7 @@ A metric object is returned that can be further specified.
 
 <h3 id="finish"><code>finish</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L1159-L1174">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L1189-L1204">View source</a>
 
 <pre><code>finish(
     exit_code: int = None
@@ -353,7 +354,7 @@ call this method when your script exits.
 
 <h3 id="finish_artifact"><code>finish_artifact</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L2119-L2168">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L2149-L2198">View source</a>
 
 <pre><code>finish_artifact(
     artifact_or_path: Union[wandb_artifacts.Artifact, str],
@@ -439,7 +440,7 @@ An <code>Artifact</code> object.
 
 <h3 id="get_project_url"><code>get_project_url</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L694-L703">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L724-L733">View source</a>
 
 <pre><code>get_project_url() -> Optional[str]</code></pre>
 
@@ -449,7 +450,7 @@ Returns:
 
 <h3 id="get_sweep_url"><code>get_sweep_url</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L705-L714">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L735-L744">View source</a>
 
 <pre><code>get_sweep_url() -> Optional[str]</code></pre>
 
@@ -459,7 +460,7 @@ Returns:
 
 <h3 id="get_url"><code>get_url</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L683-L692">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L713-L722">View source</a>
 
 <pre><code>get_url() -> Optional[str]</code></pre>
 
@@ -469,7 +470,7 @@ Returns:
 
 <h3 id="join"><code>join</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L1176-L1178">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L1206-L1208">View source</a>
 
 <pre><code>join(
     exit_code: int = None
@@ -480,7 +481,7 @@ Deprecated alias for <code>finish()</code> - please use finish
 
 <h3 id="log"><code>log</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L893-L1057">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L923-L1087">View source</a>
 
 <pre><code>log(
     data: Dict[str, Any],
@@ -653,7 +654,7 @@ if invalid data is passed
 
 <h3 id="log_artifact"><code>log_artifact</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L2035-L2066">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L2065-L2096">View source</a>
 
 <pre><code>log_artifact(
     artifact_or_path: Union[wandb_artifacts.Artifact, str],
@@ -730,7 +731,7 @@ An <code>Artifact</code> object.
 
 <h3 id="log_code"><code>log_code</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L624-L681">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L654-L711">View source</a>
 
 <pre><code>log_code(
     root: str = &#x27;.&#x27;,
@@ -794,7 +795,7 @@ An <code>Artifact</code> object if code was logged
 
 <h3 id="plot_table"><code>plot_table</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L1181-L1196">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L1211-L1226">View source</a>
 
 <pre><code>plot_table(
     vega_spec_name, data_table, fields, string_fields=None
@@ -852,7 +853,7 @@ the custom visualization needs
 
 <h3 id="project_name"><code>project_name</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L578-L580">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L608-L610">View source</a>
 
 <pre><code>project_name() -> str</code></pre>
 
@@ -861,7 +862,7 @@ the custom visualization needs
 
 <h3 id="restore"><code>restore</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L1150-L1157">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L1180-L1187">View source</a>
 
 <pre><code>restore(
     name: str,
@@ -951,7 +952,7 @@ if the file is not found or can't find run_path
 
 <h3 id="save"><code>save</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L1059-L1148">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L1089-L1178">View source</a>
 
 <pre><code>save(
     glob_str: Optional[str] = None,
@@ -998,7 +999,7 @@ path.  If this isn't specified the method is a noop.
 
 <h3 id="upsert_artifact"><code>upsert_artifact</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L2068-L2117">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L2098-L2147">View source</a>
 
 <pre><code>upsert_artifact(
     artifact_or_path: Union[wandb_artifacts.Artifact, str],
@@ -1085,7 +1086,7 @@ An <code>Artifact</code> object.
 
 <h3 id="use_artifact"><code>use_artifact</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L1983-L2033">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L2013-L2063">View source</a>
 
 <pre><code>use_artifact(
     artifact_or_name, type=None, aliases=None
@@ -1145,7 +1146,7 @@ An <code>Artifact</code> object.
 
 <h3 id="watch"><code>watch</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L1979-L1980">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L2009-L2010">View source</a>
 
 <pre><code>watch(
     models, criterion=None, log=&#x27;gradients&#x27;, log_freq=100, idx=None
@@ -1156,7 +1157,7 @@ An <code>Artifact</code> object.
 
 <h3 id="__enter__"><code>__enter__</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L2308-L2309">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L2338-L2339">View source</a>
 
 <pre><code>__enter__() -> "Run"</code></pre>
 
@@ -1165,7 +1166,7 @@ An <code>Artifact</code> object.
 
 <h3 id="__exit__"><code>__exit__</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.27/wandb/sdk/wandb_run.py#L2311-L2319">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L2341-L2349">View source</a>
 
 <pre><code>__exit__(
     exc_type: Type[BaseException],
