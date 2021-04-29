@@ -1,10 +1,19 @@
-# wandb.sweep
+# sweep
+
+
 
 [![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.28/wandb/wandb_controller.py#L740-L762)
 
-```text
+
+
+
+
+
+```python
 sweep(
     sweep, entity=None, project=None
 )
 ```
+
+
 
