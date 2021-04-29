@@ -1,6 +1,4 @@
 # Documentation Generation
 
-This is the README of Documentation Generation.
-
-Changes from gitbook.
+Let's change the game here!
 
