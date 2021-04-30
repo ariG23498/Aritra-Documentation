@@ -51,7 +51,7 @@
       * [wandb.data\_types.Video](ref/python/data-types/video.md)
     * [Integrations](ref/python/integrations/README.md)
       * [keras](ref/python/integrations/keras/README.md)
-        * [wandb.keras.wandbcallback](ref/python/integrations/keras/wandbcallback.md)
+        * [wandb.keras.WandbCallback](ref/python/integrations/keras/wandbcallback.md)
     * [Import & Export API](ref/python/public-api/README.md)
       * [wandb.apis.public.Api](ref/python/public-api/api.md)
       * [wandb.apis.public.Artifact](ref/python/public-api/artifact.md)
