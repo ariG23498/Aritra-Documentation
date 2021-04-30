@@ -9,8 +9,7 @@
 
 Start a new tracked run with <code>wandb.init()</code>.
 
-```python
-init(
+<pre><code>init(
     job_type: Optional[str] = None,
     dir=None,
     config: Union[Dict, str, None] = None,
@@ -35,8 +34,7 @@ init(
     save_code=None,
     id=None,
     settings: Union[Settings, Dict[str, Any], None] = None
-) -> Union[Run, RunDisabled, None]
-```
+) -> Union[Run, RunDisabled, None]</code></pre>
 
 
 

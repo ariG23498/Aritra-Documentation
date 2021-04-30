@@ -9,11 +9,9 @@
 
 Hooks into the torch model to collect gradients and the topology.  Should be extended
 
-```python
-watch(
+<pre><code>watch(
     models, criterion=None, log=&#x27;gradients&#x27;, log_freq=1000, idx=None
-)
-```
+)</code></pre>
 
 
 

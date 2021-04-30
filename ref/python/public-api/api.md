@@ -9,11 +9,9 @@
 
 Used for querying the wandb server.
 
-```python
-Api(
+<pre><code>Api(
     overrides={}
-)
-```
+)</code></pre>
 
 
 
@@ -63,11 +61,9 @@ You can also set defaults for <code>entity</code>, <code>project</code>, and <co
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L533-L554">View source</a>
 
-```python
-artifact(
+<pre><code>artifact(
     name, type=None
-)
-```
+)</code></pre>
 
 Returns a single artifact by parsing path in the form `entity/project/run_id`.
 
@@ -116,11 +112,9 @@ A <code>Artifact</code> object.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L522-L525">View source</a>
 
-```python
-artifact_type(
+<pre><code>artifact_type(
     type_name, project=None
-)
-```
+)</code></pre>
 
 
 
@@ -129,11 +123,9 @@ artifact_type(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L517-L520">View source</a>
 
-```python
-artifact_types(
+<pre><code>artifact_types(
     project=None
-)
-```
+)</code></pre>
 
 
 
@@ -142,11 +134,9 @@ artifact_types(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L527-L531">View source</a>
 
-```python
-artifact_versions(
+<pre><code>artifact_versions(
     type_name, name, per_page=50
-)
-```
+)</code></pre>
 
 
 
@@ -155,11 +145,9 @@ artifact_versions(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L247-L251">View source</a>
 
-```python
-create_run(
+<pre><code>create_run(
     **kwargs
-)
-```
+)</code></pre>
 
 Create a new run
 
@@ -168,9 +156,7 @@ Create a new run
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L302-L308">View source</a>
 
-```python
-flush()
-```
+<pre><code>flush()</code></pre>
 
 The api object keeps a local cache of runs, so if the state of the run may
 change while executing your script you must clear the local cache with <code>api.flush()</code>
@@ -180,11 +166,9 @@ to get the latest values associated with the run.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L365-L387">View source</a>
 
-```python
-projects(
+<pre><code>projects(
     entity=None, per_page=200
-)
-```
+)</code></pre>
 
 Get projects for a given entity.
 
@@ -231,11 +215,9 @@ A <code>Projects</code> object which is an iterable collection of <code>Project<
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L389-L420">View source</a>
 
-```python
-reports(
+<pre><code>reports(
     path=&#x27;&#x27;, name=None, per_page=50
-)
-```
+)</code></pre>
 
 Get reports for a given project path.
 
@@ -289,11 +271,9 @@ A <code>Reports</code> object which is an iterable collection of <code>BetaRepor
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L481-L497">View source</a>
 
-```python
-run(
+<pre><code>run(
     path=&#x27;&#x27;
-)
-```
+)</code></pre>
 
 Returns a single run by parsing path in the form entity/project/run_id.
 
@@ -333,11 +313,9 @@ A <code>Run</code> object.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L422-L479">View source</a>
 
-```python
-runs(
+<pre><code>runs(
     path=&#x27;&#x27;, filters=None, order=&#x27;-created_at&#x27;, per_page=50
-)
-```
+)</code></pre>
 
 Return a set of runs from a project that match the filters provided.
 
@@ -424,11 +402,9 @@ A <code>Runs</code> object, which is an iterable collection of <code>Run</code> 
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L499-L515">View source</a>
 
-```python
-sweep(
+<pre><code>sweep(
     path=&#x27;&#x27;
-)
-```
+)</code></pre>
 
 Returns a sweep by parsing path in the form `entity/project/sweep_id`.
 
@@ -468,11 +444,9 @@ A <code>Sweep</code> object.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L253-L274">View source</a>
 
-```python
-sync_tensorboard(
+<pre><code>sync_tensorboard(
     root_dir, run_id=None, project=None, entity=None
-)
-```
+)</code></pre>
 
 Sync a local directory containing tfevent files to wandb
 

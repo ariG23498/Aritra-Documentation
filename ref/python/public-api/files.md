@@ -9,11 +9,9 @@
 
 An iterable collection of <code>File</code> objects.
 
-```python
-Files(
+<pre><code>Files(
     client, run, names=[], per_page=50, upload=(False)
-)
-```
+)</code></pre>
 
 
 

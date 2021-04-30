@@ -9,11 +9,9 @@
 
 A wandb Artifact.
 
-```python
-Artifact(
+<pre><code>Artifact(
     client, entity, project, name, attrs=None
-)
-```
+)</code></pre>
 
 
 
@@ -235,11 +233,9 @@ be 'v0'.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L2895-L2896">View source</a>
 
-```python
-add(
+<pre><code>add(
     obj, name
-)
-```
+)</code></pre>
 
 Adds wandb.WBValue <code>obj</code> to the artifact.
 
@@ -310,11 +306,9 @@ table = artifact.get("my_table")
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L2889-L2890">View source</a>
 
-```python
-add_dir(
+<pre><code>add_dir(
     path, name=None
-)
-```
+)</code></pre>
 
 Adds a local directory to the artifact.
 
@@ -390,11 +384,9 @@ None
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L2886-L2887">View source</a>
 
-```python
-add_file(
+<pre><code>add_file(
     local_path, name=None, is_tmp=(False)
-)
-```
+)</code></pre>
 
 Adds a local file to the artifact.
 
@@ -481,11 +473,9 @@ the added manifest entry
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L2892-L2893">View source</a>
 
-```python
-add_reference(
+<pre><code>add_reference(
     uri, name=None, checksum=(True), max_objects=None
-)
-```
+)</code></pre>
 
 Adds a reference denoted by a URI to the artifact. Unlike adding files or directories,
 references are NOT uploaded to W&B. However, artifact methods such as <code>download()</code> can
@@ -602,11 +592,9 @@ artifact.add_reference('gs://mybucket/prefix', name='path')
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L3015-L3030">View source</a>
 
-```python
-checkout(
+<pre><code>checkout(
     root=None
-)
-```
+)</code></pre>
 
 Replaces the specified root directory with the contents of the artifact.
 
@@ -646,9 +634,7 @@ artifact.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L2866-L2881">View source</a>
 
-```python
-delete()
-```
+<pre><code>delete()</code></pre>
 
 Delete artifact and its files.
 
@@ -657,11 +643,9 @@ Delete artifact and its files.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L2978-L3013">View source</a>
 
-```python
-download(
+<pre><code>download(
     root=None, recursive=(False)
-)
-```
+)</code></pre>
 
 Downloads the contents of the artifact to the specified root directory.
 
@@ -710,14 +694,10 @@ downloaded. Otherwise, the dependent artifacts are downloaded as needed.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L2824-L2864">View source</a>
 
-```python
-@staticmethod
-```
-```python
-expected_type(
+<pre><code>@staticmethod</code>
+<code>expected_type(
     client, name, entity_name, project_name
-)
-```
+)</code></pre>
 
 Returns the expected type for a given artifact name and project
 
@@ -726,11 +706,9 @@ Returns the expected type for a given artifact name and project
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L3064-L3085">View source</a>
 
-```python
-file(
+<pre><code>file(
     root=None
-)
-```
+)</code></pre>
 
 Download a single file artifact to dir specified by the <root>
 
@@ -768,14 +746,10 @@ Download a single file artifact to dir specified by the <root>
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L2660-L2700">View source</a>
 
-```python
-@classmethod
-```
-```python
-from_id(
+<pre><code>@classmethod</code>
+<code>from_id(
     artifact_id, client
-)
-```
+)</code></pre>
 
 
 
@@ -784,11 +758,9 @@ from_id(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L2950-L2976">View source</a>
 
-```python
-get(
+<pre><code>get(
     name
-)
-```
+)</code></pre>
 
 Gets the WBValue object located at the artifact relative <code>name</code>.
 
@@ -849,11 +821,9 @@ with wandb.init() as r:
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L2938-L2948">View source</a>
 
-```python
-get_path(
+<pre><code>get_path(
     name
-)
-```
+)</code></pre>
 
 Gets the path to the file located at the artifact relative <code>name</code>.
 
@@ -916,9 +886,7 @@ with wandb.init() as r:
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L3316-L3349">View source</a>
 
-```python
-logged_by()
-```
+<pre><code>logged_by()</code></pre>
 
 Retrieves the run which logged this artifact
 
@@ -943,11 +911,9 @@ Run object which logged this artifact
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L2883-L2884">View source</a>
 
-```python
-new_file(
+<pre><code>new_file(
     name, mode=None
-)
-```
+)</code></pre>
 
 Open a new temporary file that will be automatically added to the artifact.
 
@@ -1004,9 +970,7 @@ the file will be automatically added to the artifact.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L3102-L3140">View source</a>
 
-```python
-save()
-```
+<pre><code>save()</code></pre>
 
 Persists artifact changes to the wandb backend.
 
@@ -1015,9 +979,7 @@ Persists artifact changes to the wandb backend.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L3272-L3314">View source</a>
 
-```python
-used_by()
-```
+<pre><code>used_by()</code></pre>
 
 Retrieves the runs which use this artifact directly
 
@@ -1039,11 +1001,9 @@ Retrieves the runs which use this artifact directly
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L3032-L3062">View source</a>
 
-```python
-verify(
+<pre><code>verify(
     root=None
-)
-```
+)</code></pre>
 
 Verify that the actual contents of an artifact at a specified directory
 <code>root</code> match the expected contents of the artifact according to its
@@ -1088,9 +1048,7 @@ artifact will be downloaded to './artifacts/<self.name>/'
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L3142-L3143">View source</a>
 
-```python
-wait()
-```
+<pre><code>wait()</code></pre>
 
 Waits for this artifact to finish logging, if needed.
 
@@ -1112,11 +1070,9 @@ Artifact
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L3354-L3355">View source</a>
 
-```python
-__getitem__(
+<pre><code>__getitem__(
     name
-)
-```
+)</code></pre>
 
 Gets the WBValue object located at the artifact relative <code>name</code>.
 

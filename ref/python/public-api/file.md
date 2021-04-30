@@ -9,11 +9,9 @@
 
 File is a class associated with a file saved by wandb.
 
-```python
-File(
+<pre><code>File(
     client, attrs
-)
-```
+)</code></pre>
 
 
 
@@ -36,9 +34,7 @@ File(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L1738-L1751">View source</a>
 
-```python
-delete()
-```
+<pre><code>delete()</code></pre>
 
 
 
@@ -47,11 +43,9 @@ delete()
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L1715-L1736">View source</a>
 
-```python
-download(
+<pre><code>download(
     root=&#x27;.&#x27;, replace=(False)
-)
-```
+)</code></pre>
 
 Downloads a file previously saved by a run from the wandb server.
 

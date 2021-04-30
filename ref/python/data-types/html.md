@@ -9,12 +9,10 @@
 
 Wandb class for arbitrary html
 
-```python
-Html(
+<pre><code>Html(
     data: Union[str, 'TextIO'],
     inject: bool = (True)
-) -> None
-```
+) -> None</code></pre>
 
 
 
@@ -50,9 +48,7 @@ to False the HTML will pass through unchanged.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/data_types.py#L917-L932">View source</a>
 
-```python
-inject_head() -> None
-```
+<pre><code>inject_head() -> None</code></pre>
 
 
 

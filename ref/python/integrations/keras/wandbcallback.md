@@ -9,8 +9,7 @@
 
 WandbCallback automatically integrates keras with wandb.
 
-```python
-WandbCallback(
+<pre><code>WandbCallback(
     monitor=&#x27;val_loss&#x27;, verbose=0, mode=&#x27;auto&#x27;,
     save_weights_only=(False), log_weights=(False), log_gradients=(False),
     save_model=(True), training_data=None, validation_data=None, labels=[],
@@ -19,8 +18,7 @@ WandbCallback(
     class_colors=None, log_batch_frequency=None, log_best_prefix=&#x27;best_&#x27;,
     save_graph=(True), validation_indexes=None, validation_row_processor=None,
     prediction_row_processor=None, infer_missing_processors=(True)
-)
-```
+)</code></pre>
 
 
 
@@ -264,11 +262,9 @@ processors where appropriate.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L514-L515">View source</a>
 
-```python
-on_batch_begin(
+<pre><code>on_batch_begin(
     batch, logs=None
-)
-```
+)</code></pre>
 
 A backwards compatibility alias for <code>on_train_batch_begin</code>.
 
@@ -277,22 +273,18 @@ A backwards compatibility alias for <code>on_train_batch_begin</code>.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L518-L525">View source</a>
 
-```python
-on_batch_end(
+<pre><code>on_batch_end(
     batch, logs=None
-)
-```
+)</code></pre>
 
 A backwards compatibility alias for <code>on_train_batch_end</code>.
 
 
 <h3 id="on_epoch_begin"><code>on_epoch_begin</code></h3>
 
-```python
-on_epoch_begin(
+<pre><code>on_epoch_begin(
     epoch, logs=None
-)
-```
+)</code></pre>
 
 Called at the start of an epoch.
 
@@ -327,11 +319,9 @@ but that may change in the future.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L457-L511">View source</a>
 
-```python
-on_epoch_end(
+<pre><code>on_epoch_end(
     epoch, logs={}
-)
-```
+)</code></pre>
 
 Called at the end of an epoch.
 
@@ -368,11 +358,9 @@ are prefixed with <code>val_</code>. For training epoch, the values of the
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L616-L617">View source</a>
 
-```python
-on_predict_batch_begin(
+<pre><code>on_predict_batch_begin(
     batch, logs=None
-)
-```
+)</code></pre>
 
 Called at the beginning of a batch in <code>predict</code> methods.
 
@@ -411,11 +399,9 @@ the model's outputs.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L619-L620">View source</a>
 
-```python
-on_predict_batch_end(
+<pre><code>on_predict_batch_end(
     batch, logs=None
-)
-```
+)</code></pre>
 
 Called at the end of a batch in <code>predict</code> methods.
 
@@ -452,11 +438,9 @@ Dict. Aggregated metric results up until this batch.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L610-L611">View source</a>
 
-```python
-on_predict_begin(
+<pre><code>on_predict_begin(
     logs=None
-)
-```
+)</code></pre>
 
 Called at the beginning of prediction.
 
@@ -483,11 +467,9 @@ but that may change in the future.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L613-L614">View source</a>
 
-```python
-on_predict_end(
+<pre><code>on_predict_end(
     logs=None
-)
-```
+)</code></pre>
 
 Called at the end of prediction.
 
@@ -514,11 +496,9 @@ but that may change in the future.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L604-L605">View source</a>
 
-```python
-on_test_batch_begin(
+<pre><code>on_test_batch_begin(
     batch, logs=None
-)
-```
+)</code></pre>
 
 Called at the beginning of a batch in <code>evaluate</code> methods.
 
@@ -560,11 +540,9 @@ the values of the <code>Model</code>'s metrics are returned.  Example:
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L607-L608">View source</a>
 
-```python
-on_test_batch_end(
+<pre><code>on_test_batch_end(
     batch, logs=None
-)
-```
+)</code></pre>
 
 Called at the end of a batch in <code>evaluate</code> methods.
 
@@ -604,11 +582,9 @@ Dict. Aggregated metric results up until this batch.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L598-L599">View source</a>
 
-```python
-on_test_begin(
+<pre><code>on_test_begin(
     logs=None
-)
-```
+)</code></pre>
 
 Called at the beginning of evaluation or validation.
 
@@ -635,11 +611,9 @@ but that may change in the future.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L601-L602">View source</a>
 
-```python
-on_test_end(
+<pre><code>on_test_end(
     logs=None
-)
-```
+)</code></pre>
 
 Called at the end of evaluation or validation.
 
@@ -667,11 +641,9 @@ but that may change in the future.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L527-L528">View source</a>
 
-```python
-on_train_batch_begin(
+<pre><code>on_train_batch_begin(
     batch, logs=None
-)
-```
+)</code></pre>
 
 Called at the beginning of a training batch in <code>fit</code> methods.
 
@@ -710,11 +682,9 @@ the values of the <code>Model</code>'s metrics are returned.  Example:
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L530-L537">View source</a>
 
-```python
-on_train_batch_end(
+<pre><code>on_train_batch_end(
     batch, logs=None
-)
-```
+)</code></pre>
 
 Called at the end of a training batch in <code>fit</code> methods.
 
@@ -751,11 +721,9 @@ Dict. Aggregated metric results up until this batch.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L551-L593">View source</a>
 
-```python
-on_train_begin(
+<pre><code>on_train_begin(
     logs=None
-)
-```
+)</code></pre>
 
 Called at the beginning of training.
 
@@ -782,11 +750,9 @@ but that may change in the future.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L595-L596">View source</a>
 
-```python
-on_train_end(
+<pre><code>on_train_end(
     logs=None
-)
-```
+)</code></pre>
 
 Called at the end of training.
 
@@ -814,11 +780,9 @@ the future.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L446-L455">View source</a>
 
-```python
-set_model(
+<pre><code>set_model(
     model
-)
-```
+)</code></pre>
 
 
 
@@ -827,11 +791,9 @@ set_model(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/integration/keras/keras.py#L443-L444">View source</a>
 
-```python
-set_params(
+<pre><code>set_params(
     params
-)
-```
+)</code></pre>
 
 
 

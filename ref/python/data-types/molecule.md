@@ -9,12 +9,10 @@
 
 Wandb class for Molecular data
 
-```python
-Molecule(
+<pre><code>Molecule(
     data_or_path: Union[str, 'TextIO'],
     **kwargs
-) -> None
-```
+) -> None</code></pre>
 
 
 

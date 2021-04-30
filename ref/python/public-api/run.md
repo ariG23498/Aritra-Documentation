@@ -9,11 +9,9 @@
 
 A single run associated with an entity and project.
 
-```python
-Run(
+<pre><code>Run(
     client, entity, project, run_id, attrs={}
-)
-```
+)</code></pre>
 
 
 
@@ -36,14 +34,10 @@ Run(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L925-L965">View source</a>
 
-```python
-@classmethod
-```
-```python
-create(
+<pre><code>@classmethod</code>
+<code>create(
     api, run_id=None, project=None, entity=None
-)
-```
+)</code></pre>
 
 Create a run for the given project
 
@@ -52,11 +46,9 @@ Create a run for the given project
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L1060-L1094">View source</a>
 
-```python
-delete(
+<pre><code>delete(
     delete_artifacts=(False)
-)
-```
+)</code></pre>
 
 Deletes the given run from the wandb backend.
 
@@ -65,11 +57,9 @@ Deletes the given run from the wandb backend.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L1156-L1165">View source</a>
 
-```python
-file(
+<pre><code>file(
     name
-)
-```
+)</code></pre>
 
 Arguments:
     name (str): name of requested file.
@@ -91,11 +81,9 @@ A <code>File</code> matching the name argument.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L1144-L1154">View source</a>
 
-```python
-files(
+<pre><code>files(
     names=[], per_page=50
-)
-```
+)</code></pre>
 
 Arguments:
     names (list): names of the requested files, if empty returns all files
@@ -118,12 +106,10 @@ A <code>Files</code> object, which is an iterator over <code>File</code> obejcts
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L1190-L1229">View source</a>
 
-```python
-history(
+<pre><code>history(
     samples=500, keys=None, x_axis=&#x27;_step&#x27;, pandas=(True),
     stream=&#x27;default&#x27;
-)
-```
+)</code></pre>
 
 Returns sampled history metrics for a run.  This is simpler and faster if you are ok with
 the history records being sampled.
@@ -163,11 +149,9 @@ If pandas=False returns a list of dicts of history metrics.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L967-L1029">View source</a>
 
-```python
-load(
+<pre><code>load(
     force=(False)
-)
-```
+)</code></pre>
 
 
 
@@ -176,11 +160,9 @@ load(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L1322-L1354">View source</a>
 
-```python
-log_artifact(
+<pre><code>log_artifact(
     artifact, aliases=None
-)
-```
+)</code></pre>
 
 Declare an artifact as output of a run.
 
@@ -217,11 +199,9 @@ A <code>Artifact</code> object.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L1287-L1289">View source</a>
 
-```python
-logged_artifacts(
+<pre><code>logged_artifacts(
     per_page=100
-)
-```
+)</code></pre>
 
 
 
@@ -230,9 +210,7 @@ logged_artifacts(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L1096-L1097">View source</a>
 
-```python
-save()
-```
+<pre><code>save()</code></pre>
 
 
 
@@ -241,11 +219,9 @@ save()
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L1231-L1285">View source</a>
 
-```python
-scan_history(
+<pre><code>scan_history(
     keys=None, page_size=1000, min_step=None, max_step=None
-)
-```
+)</code></pre>
 
 Returns an iterable collection of all history records for a run.
 
@@ -294,11 +270,9 @@ An iterable collection over history records (dict).
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L561-L563">View source</a>
 
-```python
-snake_to_camel(
+<pre><code>snake_to_camel(
     string
-)
-```
+)</code></pre>
 
 
 
@@ -307,9 +281,7 @@ snake_to_camel(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L1031-L1058">View source</a>
 
-```python
-update()
-```
+<pre><code>update()</code></pre>
 
 Persists changes to the run object to the wandb backend.
 
@@ -318,11 +290,9 @@ Persists changes to the run object to the wandb backend.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L1167-L1188">View source</a>
 
-```python
-upload_file(
+<pre><code>upload_file(
     path, root=&#x27;.&#x27;
-)
-```
+)</code></pre>
 
 Arguments:
     path (str): name of file to upload.
@@ -347,11 +317,9 @@ A <code>File</code> matching the name argument.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L1295-L1320">View source</a>
 
-```python
-use_artifact(
+<pre><code>use_artifact(
     artifact
-)
-```
+)</code></pre>
 
 Declare an artifact as an input to a run.
 
@@ -387,11 +355,9 @@ A <code>Artifact</code> object.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L1291-L1293">View source</a>
 
-```python
-used_artifacts(
+<pre><code>used_artifacts(
     per_page=100
-)
-```
+)</code></pre>
 
 
 

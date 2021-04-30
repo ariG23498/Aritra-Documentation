@@ -9,13 +9,11 @@
 
 wandb class for histograms.
 
-```python
-Histogram(
+<pre><code>Histogram(
     sequence: Optional[Sequence] = None,
     np_histogram: Optional['NumpyHistogram'] = None,
     num_bins: int = 64
-) -> None
-```
+) -> None</code></pre>
 
 
 

@@ -9,11 +9,9 @@
 
 Wandb class for plotly plots.
 
-```python
-Plotly(
+<pre><code>Plotly(
     val: Union['plotly.Figure', 'matplotlib.artist.Artist']
-)
-```
+)</code></pre>
 
 
 
@@ -41,14 +39,10 @@ matplotlib or plotly figure
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/data_types.py#L2009-L2017">View source</a>
 
-```python
-@classmethod
-```
-```python
-make_plot_media(
+<pre><code>@classmethod</code>
+<code>make_plot_media(
     val: Union['plotly.Figure', 'matplotlib.artist.Artist']
-) -> Union[Image, 'Plotly']
-```
+) -> Union[Image, 'Plotly']</code></pre>
 
 
 

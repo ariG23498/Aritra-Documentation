@@ -8,7 +8,7 @@
 
 
 
-wandb integration keras module.
+W&B integration <code>keras</code> module.
 
 
 

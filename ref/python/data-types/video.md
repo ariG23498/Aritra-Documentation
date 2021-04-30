@@ -9,14 +9,12 @@
 
 Wandb representation of video.
 
-```python
-Video(
+<pre><code>Video(
     data_or_path: Union['np.ndarray', str, 'TextIO'],
     caption: Optional[str] = None,
     fps: int = 4,
     format: Optional[str] = None
-)
-```
+)</code></pre>
 
 
 
@@ -72,9 +70,7 @@ Channels should be (time, channel, height, width) or
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/data_types.py#L1037-L1074">View source</a>
 
-```python
-encode() -> None
-```
+<pre><code>encode() -> None</code></pre>
 
 
 

@@ -9,12 +9,10 @@
 
 This is a table designed to display sets of records.
 
-```python
-Table(
+<pre><code>Table(
     columns=None, data=None, rows=None, dataframe=None, dtype=None, optional=(True),
     allow_mixed_types=(False)
-)
-```
+)</code></pre>
 
 
 
@@ -62,11 +60,9 @@ allow_mixed_types (bool): Determines if columns are allowed to have mixed types 
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L683-L722">View source</a>
 
-```python
-add_column(
+<pre><code>add_column(
     name, data, optional=(False)
-)
-```
+)</code></pre>
 
 Add a column of data to the table.
 
@@ -79,11 +75,9 @@ Arguments
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L765-L785">View source</a>
 
-```python
-add_computed_columns(
+<pre><code>add_computed_columns(
     fn
-)
-```
+)</code></pre>
 
 Adds one or more computed columns based on existing data
 
@@ -110,11 +104,9 @@ is set to true
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L367-L397">View source</a>
 
-```python
-add_data(
+<pre><code>add_data(
     *data
-)
-```
+)</code></pre>
 
 Add a row of data to the table. Argument length should match column length
 
@@ -123,11 +115,9 @@ Add a row of data to the table. Argument length should match column length
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L363-L365">View source</a>
 
-```python
-add_row(
+<pre><code>add_row(
     *row
-)
-```
+)</code></pre>
 
 
 
@@ -136,11 +126,9 @@ add_row(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L262-L316">View source</a>
 
-```python
-cast(
+<pre><code>cast(
     col_name, dtype, optional=(False)
-)
-```
+)</code></pre>
 
 Casts a column to a specific type
 
@@ -180,11 +168,9 @@ normal python class, internal WB type, or an example object (eg. an instance of 
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L724-L747">View source</a>
 
-```python
-get_column(
+<pre><code>get_column(
     name, convert_to=None
-)
-```
+)</code></pre>
 
 Retrieves a column of data from the table
 
@@ -197,9 +183,7 @@ Arguments
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L749-L756">View source</a>
 
-```python
-get_index()
-```
+<pre><code>get_index()</code></pre>
 
 Returns an array of row indexes which can be used in other tables to create links
 
@@ -208,11 +192,9 @@ Returns an array of row indexes which can be used in other tables to create link
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L758-L763">View source</a>
 
-```python
-index_ref(
+<pre><code>index_ref(
     index
-)
-```
+)</code></pre>
 
 Get a reference to a particular row index in the table
 
@@ -221,9 +203,7 @@ Get a reference to a particular row index in the table
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L562-L575">View source</a>
 
-```python
-iterrows()
-```
+<pre><code>iterrows()</code></pre>
 
 Iterate over rows as (ndx, row)
 Yields
@@ -238,11 +218,9 @@ row : List[any]
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L582-L586">View source</a>
 
-```python
-set_fk(
+<pre><code>set_fk(
     col_name, table, table_col
-)
-```
+)</code></pre>
 
 
 
@@ -251,11 +229,9 @@ set_fk(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L577-L580">View source</a>
 
-```python
-set_pk(
+<pre><code>set_pk(
     col_name
-)
-```
+)</code></pre>
 
 
 

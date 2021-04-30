@@ -9,14 +9,12 @@
 
 Log a dict to the global run's history.
 
-```python
-log(
+<pre><code>log(
     data: Dict[str, Any],
     step: int = None,
     commit: bool = None,
     sync: bool = None
-) -> None
-```
+) -> None</code></pre>
 
 
 

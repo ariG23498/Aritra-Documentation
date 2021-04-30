@@ -9,9 +9,7 @@
 
 Config object
 
-```python
-config() -> None
-```
+<pre><code>config() -> None</code></pre>
 
 
 

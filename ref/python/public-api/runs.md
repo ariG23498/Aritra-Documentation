@@ -9,11 +9,9 @@
 
 An iterable collection of runs associated with a project and optional filter.
 
-```python
-Runs(
+<pre><code>Runs(
     client, entity, project, filters={}, order=None, per_page=50
-)
-```
+)</code></pre>
 
 
 

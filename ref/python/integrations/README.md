@@ -14,5 +14,5 @@
 
 ## Modules
 
-[`keras`](./keras) module: wandb integration keras module.
+[`keras`](./keras) module: W&B integration <code>keras</code> module.
 

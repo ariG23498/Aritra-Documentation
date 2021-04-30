@@ -9,11 +9,9 @@
 
 Wandb class for graphs
 
-```python
-Graph(
+<pre><code>Graph(
     format=&#x27;keras&#x27;
-)
-```
+)</code></pre>
 
 
 
@@ -37,11 +35,9 @@ Import a keras model:
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L1303-L1307">View source</a>
 
-```python
-add_edge(
+<pre><code>add_edge(
     from_node, to_node
-)
-```
+)</code></pre>
 
 
 
@@ -50,11 +46,9 @@ add_edge(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L1289-L1301">View source</a>
 
-```python
-add_node(
+<pre><code>add_node(
     node=None, **node_kwargs
-)
-```
+)</code></pre>
 
 
 
@@ -63,14 +57,10 @@ add_node(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L1309-L1338">View source</a>
 
-```python
-@classmethod
-```
-```python
-from_keras(
+<pre><code>@classmethod</code>
+<code>from_keras(
     model
-)
-```
+)</code></pre>
 
 
 
@@ -79,9 +69,7 @@ from_keras(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L1283-L1287">View source</a>
 
-```python
-pprint()
-```
+<pre><code>pprint()</code></pre>
 
 
 
@@ -90,11 +78,9 @@ pprint()
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L1280-L1281">View source</a>
 
-```python
-__getitem__(
+<pre><code>__getitem__(
     nid
-)
-```
+)</code></pre>
 
 
 

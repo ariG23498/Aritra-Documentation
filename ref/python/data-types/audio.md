@@ -9,11 +9,9 @@
 
 Wandb class for audio clips.
 
-```python
-Audio(
+<pre><code>Audio(
     data_or_path, sample_rate=None, caption=None
-)
-```
+)</code></pre>
 
 
 
@@ -57,14 +55,10 @@ numpy array of audio data.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L979-L981">View source</a>
 
-```python
-@classmethod
-```
-```python
-durations(
+<pre><code>@classmethod</code>
+<code>durations(
     audio_list
-)
-```
+)</code></pre>
 
 
 
@@ -73,14 +67,10 @@ durations(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L922-L924">View source</a>
 
-```python
-@classmethod
-```
-```python
-path_is_reference(
+<pre><code>@classmethod</code>
+<code>path_is_reference(
     path
-)
-```
+)</code></pre>
 
 
 
@@ -89,9 +79,7 @@ path_is_reference(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L995-L1007">View source</a>
 
-```python
-resolve_ref()
-```
+<pre><code>resolve_ref()</code></pre>
 
 
 
@@ -100,14 +88,10 @@ resolve_ref()
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/data_types.py#L983-L985">View source</a>
 
-```python
-@classmethod
-```
-```python
-sample_rates(
+<pre><code>@classmethod</code>
+<code>sample_rates(
     audio_list
-)
-```
+)</code></pre>
 
 
 

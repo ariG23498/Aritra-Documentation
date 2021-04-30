@@ -9,15 +9,13 @@
 
 Flexible and lightweight building block for dataset and model versioning.
 
-```python
-Artifact(
+<pre><code>Artifact(
     name: str,
     type: str,
     description: Optional[str] = None,
     metadata: Optional[dict] = None,
     incremental: Optional[bool] = None
-) -> None
-```
+) -> None</code></pre>
 
 
 
@@ -256,12 +254,10 @@ be 'v0'.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_artifacts.py#L448-L526">View source</a>
 
-```python
-add(
+<pre><code>add(
     obj: data_types.WBValue,
     name: str
-) -> ArtifactEntry
-```
+) -> ArtifactEntry</code></pre>
 
 Adds wandb.WBValue <code>obj</code> to the artifact.
 
@@ -332,12 +328,10 @@ table = artifact.get("my_table")
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_artifacts.py#L381-L414">View source</a>
 
-```python
-add_dir(
+<pre><code>add_dir(
     local_path: str,
     name: Optional[str] = None
-) -> None
-```
+) -> None</code></pre>
 
 Adds a local directory to the artifact.
 
@@ -413,13 +407,11 @@ None
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_artifacts.py#L360-L379">View source</a>
 
-```python
-add_file(
+<pre><code>add_file(
     local_path: str,
     name: Optional[str] = None,
     is_tmp: Optional[bool] = (False)
-) -> ArtifactEntry
-```
+) -> ArtifactEntry</code></pre>
 
 Adds a local file to the artifact.
 
@@ -506,14 +498,12 @@ the added manifest entry
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_artifacts.py#L416-L446">View source</a>
 
-```python
-add_reference(
+<pre><code>add_reference(
     uri: Union[ArtifactEntry, str],
     name: Optional[str] = None,
     checksum: bool = (True),
     max_objects: Optional[int] = None
-) -> Sequence[ArtifactEntry]
-```
+) -> Sequence[ArtifactEntry]</code></pre>
 
 Adds a reference denoted by a URI to the artifact. Unlike adding files or directories,
 references are NOT uploaded to W&B. However, artifact methods such as <code>download()</code> can
@@ -630,11 +620,9 @@ artifact.add_reference('gs://mybucket/prefix', name='path')
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_artifacts.py#L552-L558">View source</a>
 
-```python
-checkout(
+<pre><code>checkout(
     root: Optional[str] = None
-) -> str
-```
+) -> str</code></pre>
 
 Replaces the specified root directory with the contents of the artifact.
 
@@ -674,9 +662,7 @@ artifact.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_artifacts.py#L621-L627">View source</a>
 
-```python
-delete() -> None
-```
+<pre><code>delete() -> None</code></pre>
 
 Deletes this artifact, cleaning up all files associated with it.
 
@@ -699,12 +685,10 @@ None
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_artifacts.py#L544-L550">View source</a>
 
-```python
-download(
+<pre><code>download(
     root: str = None,
     recursive: bool = (False)
-) -> str
-```
+) -> str</code></pre>
 
 Downloads the contents of the artifact to the specified root directory.
 
@@ -753,9 +737,7 @@ downloaded. Otherwise, the dependent artifacts are downloaded as needed.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_artifacts.py#L662-L676">View source</a>
 
-```python
-finalize() -> None
-```
+<pre><code>finalize() -> None</code></pre>
 
 Marks this artifact as final, which disallows further additions to the artifact.
 This happens automatically when calling <code>log_artifact</code>.
@@ -778,11 +760,9 @@ None
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_artifacts.py#L536-L542">View source</a>
 
-```python
-get(
+<pre><code>get(
     name: str
-) -> data_types.WBValue
-```
+) -> data_types.WBValue</code></pre>
 
 Gets the WBValue object located at the artifact relative <code>name</code>.
 
@@ -843,11 +823,9 @@ with wandb.init() as r:
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_artifacts.py#L637-L660">View source</a>
 
-```python
-get_added_local_path_name(
+<pre><code>get_added_local_path_name(
     local_path: str
-) -> Optional[str]
-```
+) -> Optional[str]</code></pre>
 
 Get the artifact relative name of a file added by a local filesystem path.
 
@@ -900,11 +878,9 @@ name = artifact.get_added_local_path_name('path/to/file.txt')
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_artifacts.py#L528-L534">View source</a>
 
-```python
-get_path(
+<pre><code>get_path(
     name: str
-) -> ArtifactEntry
-```
+) -> ArtifactEntry</code></pre>
 
 Gets the path to the file located at the artifact relative <code>name</code>.
 
@@ -967,9 +943,7 @@ with wandb.init() as r:
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_artifacts.py#L337-L343">View source</a>
 
-```python
-logged_by() -> "wandb.apis.public.Run"
-```
+<pre><code>logged_by() -> "wandb.apis.public.Run"</code></pre>
 
 Returns:
     (Run): The run that first logged this artifact.
@@ -978,15 +952,11 @@ Returns:
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_artifacts.py#L345-L358">View source</a>
 
-```python
-@contextlib.contextmanager
-```
-```python
-new_file(
+<pre><code>@contextlib.contextmanager</code>
+<code>new_file(
     name: str,
     mode: str = &#x27;w&#x27;
-) -> Generator[IO, None, None]
-```
+) -> Generator[IO, None, None]</code></pre>
 
 Open a new temporary file that will be automatically added to the artifact.
 
@@ -1043,12 +1013,10 @@ the file will be automatically added to the artifact.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_artifacts.py#L568-L619">View source</a>
 
-```python
-save(
+<pre><code>save(
     project: Optional[str] = None,
     settings: Optional['wandb.wandb_sdk.wandb_settings.Settings'] = None
-) -> None
-```
+) -> None</code></pre>
 
 Persists any changes made to the artifact. If currently in a run, that run will
 log this artifact. If not currently in a run, a run of type "auto" will be created
@@ -1095,9 +1063,7 @@ None
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_artifacts.py#L329-L335">View source</a>
 
-```python
-used_by() -> List['wandb.apis.public.Run']
-```
+<pre><code>used_by() -> List['wandb.apis.public.Run']</code></pre>
 
 Returns:
     (list): A list of the runs that have used this artifact.
@@ -1106,11 +1072,9 @@ Returns:
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_artifacts.py#L560-L566">View source</a>
 
-```python
-verify(
+<pre><code>verify(
     root: Optional[str] = None
-) -> bool
-```
+) -> bool</code></pre>
 
 Verify that the actual contents of an artifact at a specified directory
 <code>root</code> match the expected contents of the artifact according to its
@@ -1155,9 +1119,7 @@ artifact will be downloaded to './artifacts/<self.name>/'
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_artifacts.py#L629-L635">View source</a>
 
-```python
-wait() -> ArtifactInterface
-```
+<pre><code>wait() -> ArtifactInterface</code></pre>
 
 Waits for this artifact to finish logging, if needed.
 
@@ -1179,11 +1141,9 @@ Artifact
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_artifacts.py#L704-L705">View source</a>
 
-```python
-__getitem__(
+<pre><code>__getitem__(
     name: str
-) -> Optional[data_types.WBValue]
-```
+) -> Optional[data_types.WBValue]</code></pre>
 
 Gets the WBValue object located at the artifact relative <code>name</code>.
 

@@ -9,11 +9,9 @@
 
 
 
-```python
-sweep(
+<pre><code>sweep(
     sweep, entity=None, project=None
-)
-```
+)</code></pre>
 
 
 

@@ -9,11 +9,9 @@
 
 An iterable collection of <code>Project</code> objects.
 
-```python
-Projects(
+<pre><code>Projects(
     client, entity, per_page=50
-)
-```
+)</code></pre>
 
 
 

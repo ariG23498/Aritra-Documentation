@@ -9,11 +9,9 @@
 
 Marks a run as finished, and finishes uploading all data.
 
-```python
-finish(
+<pre><code>finish(
     exit_code: int = None
-) -> None
-```
+) -> None</code></pre>
 
 
 

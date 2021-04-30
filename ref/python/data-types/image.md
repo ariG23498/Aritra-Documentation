@@ -9,8 +9,7 @@
 
 Wandb class for images.
 
-```python
-Image(
+<pre><code>Image(
     data_or_path: "ImageDataOrPathType",
     mode: Optional[str] = None,
     caption: Optional[str] = None,
@@ -18,8 +17,7 @@ Image(
     classes: Optional[Union['Classes', Sequence[dict]]] = None,
     boxes: Optional[Union[Dict[str, 'BoundingBoxes2D'], Dict[str, dict]]] = None,
     masks: Optional[Union[Dict[str, 'ImageMask'], Dict[str, dict]]] = None
-) -> None
-```
+) -> None</code></pre>
 
 
 
@@ -64,17 +62,13 @@ the data format and converts it.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/data_types.py#L1945-L1966">View source</a>
 
-```python
-@classmethod
-```
-```python
-all_boxes(
+<pre><code>@classmethod</code>
+<code>all_boxes(
     images: Sequence['Image'],
     run: "LocalRun",
     run_key: str,
     step: Union[int, str]
-) -> Union[List[Optional[dict]], bool]
-```
+) -> Union[List[Optional[dict]], bool]</code></pre>
 
 
 
@@ -83,14 +77,10 @@ all_boxes(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/data_types.py#L1968-L1972">View source</a>
 
-```python
-@classmethod
-```
-```python
-all_captions(
+<pre><code>@classmethod</code>
+<code>all_captions(
     images: Sequence['Media']
-) -> Union[bool, Sequence[Optional[str]]]
-```
+) -> Union[bool, Sequence[Optional[str]]]</code></pre>
 
 
 
@@ -99,17 +89,13 @@ all_captions(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/data_types.py#L1922-L1943">View source</a>
 
-```python
-@classmethod
-```
-```python
-all_masks(
+<pre><code>@classmethod</code>
+<code>all_masks(
     images: Sequence['Image'],
     run: "LocalRun",
     run_key: str,
     step: Union[int, str]
-) -> Union[List[Optional[dict]], bool]
-```
+) -> Union[List[Optional[dict]], bool]</code></pre>
 
 
 
@@ -118,11 +104,9 @@ all_masks(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/data_types.py#L1816-L1830">View source</a>
 
-```python
-guess_mode(
+<pre><code>guess_mode(
     data: "np.ndarray"
-) -> str
-```
+) -> str</code></pre>
 
 Guess what type of image the np.array is representing
 
@@ -131,14 +115,10 @@ Guess what type of image the np.array is representing
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/data_types.py#L1832-L1854">View source</a>
 
-```python
-@classmethod
-```
-```python
-to_uint8(
+<pre><code>@classmethod</code>
+<code>to_uint8(
     data: "np.ndarray"
-) -> "np.ndarray"
-```
+) -> "np.ndarray"</code></pre>
 
 Converts floating point image on the range [0,1] and integer images
 on the range [0,255] to uint8, clipping if necessary.

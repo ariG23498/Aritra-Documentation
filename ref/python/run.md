@@ -9,13 +9,11 @@
 
 A unit of computation logged by wandb. Typically this is an ML experiment.
 
-```python
-Run(
+<pre><code>Run(
     settings: Settings,
     config: Optional[Dict[str, Any]] = None,
     sweep_config: Optional[Dict[str, Any]] = None
-) -> None
-```
+) -> None</code></pre>
 
 
 
@@ -207,14 +205,12 @@ Returns:
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L2300-L2336">View source</a>
 
-```python
-alert(
+<pre><code>alert(
     title: str,
     text: str,
     level: Union[str, None] = None,
     wait_duration: Union[int, float, timedelta, None] = None
-) -> None
-```
+) -> None</code></pre>
 
 Launch an alert with the given title and text.
 
@@ -261,8 +257,7 @@ alert with this title.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L1914-L2006">View source</a>
 
-```python
-define_metric(
+<pre><code>define_metric(
     name: str,
     step_metric: Union[str, wandb_metric.Metric, None] = None,
     step_sync: bool = None,
@@ -271,8 +266,7 @@ define_metric(
     goal: str = None,
     overwrite: bool = None,
     **kwargs
-) -> wandb_metric.Metric
-```
+) -> wandb_metric.Metric</code></pre>
 
 Define metric properties which will later be logged with <code>wandb.log()</code>.
 
@@ -350,11 +344,9 @@ A metric object is returned that can be further specified.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L1189-L1204">View source</a>
 
-```python
-finish(
+<pre><code>finish(
     exit_code: int = None
-) -> None
-```
+) -> None</code></pre>
 
 Marks a run as finished, and finishes uploading all data.  This is
 used when creating multiple runs in the same process.  We automatically
@@ -364,15 +356,13 @@ call this method when your script exits.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L2149-L2198">View source</a>
 
-```python
-finish_artifact(
+<pre><code>finish_artifact(
     artifact_or_path: Union[wandb_artifacts.Artifact, str],
     name: Optional[str] = None,
     type: Optional[str] = None,
     aliases: Optional[List[str]] = None,
     distributed_id: Optional[str] = None
-) -> wandb_artifacts.Artifact
-```
+) -> wandb_artifacts.Artifact</code></pre>
 
 Finish a non-finalized artifact as output of a run. Subsequent "upserts" with
 the same distributed ID will result in a new version
@@ -452,9 +442,7 @@ An <code>Artifact</code> object.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L724-L733">View source</a>
 
-```python
-get_project_url() -> Optional[str]
-```
+<pre><code>get_project_url() -> Optional[str]</code></pre>
 
 Returns:
     A url (str, optional) for the W&B project associated with
@@ -464,9 +452,7 @@ Returns:
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L735-L744">View source</a>
 
-```python
-get_sweep_url() -> Optional[str]
-```
+<pre><code>get_sweep_url() -> Optional[str]</code></pre>
 
 Returns:
     A url (str, optional) for the sweep associated with the run
@@ -476,9 +462,7 @@ Returns:
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L713-L722">View source</a>
 
-```python
-get_url() -> Optional[str]
-```
+<pre><code>get_url() -> Optional[str]</code></pre>
 
 Returns:
     A url (str, optional) for the W&B run or None if the run
@@ -488,11 +472,9 @@ Returns:
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L1206-L1208">View source</a>
 
-```python
-join(
+<pre><code>join(
     exit_code: int = None
-) -> None
-```
+) -> None</code></pre>
 
 Deprecated alias for <code>finish()</code> - please use finish
 
@@ -501,14 +483,12 @@ Deprecated alias for <code>finish()</code> - please use finish
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L923-L1087">View source</a>
 
-```python
-log(
+<pre><code>log(
     data: Dict[str, Any],
     step: int = None,
     commit: bool = None,
     sync: bool = None
-) -> None
-```
+) -> None</code></pre>
 
 Log a dict to the global run's history.
 
@@ -676,14 +656,12 @@ if invalid data is passed
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L2065-L2096">View source</a>
 
-```python
-log_artifact(
+<pre><code>log_artifact(
     artifact_or_path: Union[wandb_artifacts.Artifact, str],
     name: Optional[str] = None,
     type: Optional[str] = None,
     aliases: Optional[List[str]] = None
-) -> wandb_artifacts.Artifact
-```
+) -> wandb_artifacts.Artifact</code></pre>
 
 Declare an artifact as output of a run.
 
@@ -755,14 +733,12 @@ An <code>Artifact</code> object.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L654-L711">View source</a>
 
-```python
-log_code(
+<pre><code>log_code(
     root: str = &#x27;.&#x27;,
     name: str = None,
     include_fn: Callable[[str], bool] = (lambda path: path.endswith(&#x27;.py&#x27;)),
     exclude_fn: Callable[[str], bool] = (lambda path: os.sep + &#x27;wandb&#x27; + os.sep in path)
-) -> Optional[Artifact]
-```
+) -> Optional[Artifact]</code></pre>
 
 log_code() saves the current state of your code to a W&B artifact.  By
 default it walks the current directory and logs all files that end with ".py".
@@ -821,11 +797,9 @@ An <code>Artifact</code> object if code was logged
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L1211-L1226">View source</a>
 
-```python
-plot_table(
+<pre><code>plot_table(
     vega_spec_name, data_table, fields, string_fields=None
-)
-```
+)</code></pre>
 
 Creates a custom plot on a table.
 
@@ -881,9 +855,7 @@ the custom visualization needs
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L608-L610">View source</a>
 
-```python
-project_name() -> str
-```
+<pre><code>project_name() -> str</code></pre>
 
 
 
@@ -892,14 +864,12 @@ project_name() -> str
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L1180-L1187">View source</a>
 
-```python
-restore(
+<pre><code>restore(
     name: str,
     run_path: Optional[str] = None,
     replace: bool = (False),
     root: Optional[str] = None
-) -> Union[None, TextIO]
-```
+) -> Union[None, TextIO]</code></pre>
 
 Downloads the specified file from cloud storage into the current directory
 or run directory.  By default this will only download the file if it doesn't
@@ -984,13 +954,11 @@ if the file is not found or can't find run_path
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L1089-L1178">View source</a>
 
-```python
-save(
+<pre><code>save(
     glob_str: Optional[str] = None,
     base_path: Optional[str] = None,
     policy: str = &#x27;live&#x27;
-) -> Union[bool, List[str]]
-```
+) -> Union[bool, List[str]]</code></pre>
 
 Ensure all files matching *glob_str* are synced to wandb with the policy specified.
 
@@ -1033,15 +1001,13 @@ path.  If this isn't specified the method is a noop.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L2098-L2147">View source</a>
 
-```python
-upsert_artifact(
+<pre><code>upsert_artifact(
     artifact_or_path: Union[wandb_artifacts.Artifact, str],
     name: Optional[str] = None,
     type: Optional[str] = None,
     aliases: Optional[List[str]] = None,
     distributed_id: Optional[str] = None
-) -> wandb_artifacts.Artifact
-```
+) -> wandb_artifacts.Artifact</code></pre>
 
 Declare (or append tp) a non-finalized artifact as output of a run. Note that you must call
 run.finish_artifact() to finalize the artifact. This is useful when distributed jobs
@@ -1122,11 +1088,9 @@ An <code>Artifact</code> object.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L2013-L2063">View source</a>
 
-```python
-use_artifact(
+<pre><code>use_artifact(
     artifact_or_name, type=None, aliases=None
-)
-```
+)</code></pre>
 
 Declare an artifact as an input to a run, call <code>download</code> or <code>file</code> on
 the returned object to get the contents locally.
@@ -1184,11 +1148,9 @@ An <code>Artifact</code> object.
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L2009-L2010">View source</a>
 
-```python
-watch(
+<pre><code>watch(
     models, criterion=None, log=&#x27;gradients&#x27;, log_freq=100, idx=None
-) -> None
-```
+) -> None</code></pre>
 
 
 
@@ -1197,9 +1159,7 @@ watch(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L2338-L2339">View source</a>
 
-```python
-__enter__() -> "Run"
-```
+<pre><code>__enter__() -> "Run"</code></pre>
 
 
 
@@ -1208,13 +1168,11 @@ __enter__() -> "Run"
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_run.py#L2341-L2349">View source</a>
 
-```python
-__exit__(
+<pre><code>__exit__(
     exc_type: Type[BaseException],
     exc_val: BaseException,
     exc_tb: TracebackType
-) -> bool
-```
+) -> bool</code></pre>
 
 
 

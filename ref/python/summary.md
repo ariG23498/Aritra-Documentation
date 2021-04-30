@@ -9,11 +9,9 @@
 
 Tracks single values for each metric for each run.
 
-```python
-summary(
+<pre><code>summary(
     get_current_summary_callback: t.Callable
-)
-```
+)</code></pre>
 
 
 

@@ -9,11 +9,9 @@
 
 Generic agent entrypoint, used for CLI or jupyter.
 
-```python
-agent(
+<pre><code>agent(
     sweep_id, function=None, entity=None, project=None, count=None
-)
-```
+)</code></pre>
 
 
 

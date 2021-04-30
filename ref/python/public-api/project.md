@@ -9,11 +9,9 @@
 
 A project is a namespace for runs.
 
-```python
-Project(
+<pre><code>Project(
     client, entity, project, attrs
-)
-```
+)</code></pre>
 
 
 
@@ -36,11 +34,9 @@ Project(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L733-L735">View source</a>
 
-```python
-artifacts_types(
+<pre><code>artifacts_types(
     per_page=50
-)
-```
+)</code></pre>
 
 
 
@@ -49,11 +45,9 @@ artifacts_types(
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.28/wandb/apis/public.py#L561-L563">View source</a>
 
-```python
-snake_to_camel(
+<pre><code>snake_to_camel(
     string
-)
-```
+)</code></pre>
 
 
 

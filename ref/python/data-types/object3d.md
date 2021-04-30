@@ -9,12 +9,10 @@
 
 Wandb class for 3D point clouds.
 
-```python
-Object3D(
+<pre><code>Object3D(
     data_or_path: Union['np.ndarray', str, 'TextIO'],
     **kwargs
-) -> None
-```
+) -> None</code></pre>
 
 
 
