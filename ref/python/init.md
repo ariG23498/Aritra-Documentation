@@ -2,7 +2,7 @@
 
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.28/wandb/sdk/wandb_init.py#L557-L782)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.30/wandb/sdk/wandb_init.py#L557-L782)
 
 
 
@@ -101,7 +101,7 @@ that file into the wandb.config object.
 (bool, optional) Turn this on to save the main script or
 notebook to W&B. This is valuable for improving experiment
 reproducibility and to diff code across experiments in the UI. By
-default this is off, but you can flip the default behavior to "on"
+default this is off, but you can flip the default behavior to on
 in [Settings](wandb.ai/settings).
 </td>
 </tr><tr>
@@ -166,25 +166,31 @@ ran this run.
 </td>
 <td>
 (str, optional) An absolute path to a directory where metadata will
-be stored. When you call download() on an artifact, this is the
+be stored. When you call <code>download()</code> on an artifact, this is the
 directory where downloaded files will be saved. By default this is
 the ./wandb directory.
-resume (bool, str, optional): Sets the resuming behavior. Options:
-"allow", "must", "never", "auto" or None. Defaults to None.
+</td>
+</tr><tr>
+<td>
+<code>resume</code>
+</td>
+<td>
+(bool, str, optional) Sets the resuming behavior. Options:
+`"allow"<code>, </code>"must"<code>, </code>"never"<code>, </code>"auto"<code> or </code>None<code>. Defaults to </code>None`.
 Cases:
-- None (default): If the new run has the same ID as a previous run,
+- <code>None</code> (default): If the new run has the same ID as a previous run,
 this run overwrites that data.
-- "auto" (or True): if the preivous run on this machine crashed,
+- `"auto"<code> (or </code>True`): if the preivous run on this machine crashed,
 automatically resume it. Otherwise, start a new run.
-- "allow": if id is set with init(id="UNIQUE_ID") or
-WANDB_RUN_ID="UNIQUE_ID" and it is identical to a previous run,
+- `"allow"`: if id is set with `init(id="UNIQUE_ID")` or
+`WANDB_RUN_ID="UNIQUE_ID"` and it is identical to a previous run,
 wandb will automatically resume the run with that id. Otherwise,
 wandb will start a new run.
-- "never": if id is set with init(id="UNIQUE_ID") or
-WANDB_RUN_ID="UNIQUE_ID" and it is identical to a previous run,
+- `"never"`: if id is set with `init(id="UNIQUE_ID")` or
+`WANDB_RUN_ID="UNIQUE_ID"` and it is identical to a previous run,
 wandb will crash.
-- "must": if id is set with init(id="UNIQUE_ID") or
-WANDB_RUN_ID="UNIQUE_ID" and it is identical to a previous run,
+- `"must"`: if id is set with `init(id="UNIQUE_ID")` or
+`WANDB_RUN_ID="UNIQUE_ID"` and it is identical to a previous run,
 wandb will automatically resume the run with the id. Otherwise
 wandb will crash.
 See https://docs.wandb.com/library/advanced/resuming for more.
@@ -194,7 +200,7 @@ See https://docs.wandb.com/library/advanced/resuming for more.
 <code>reinit</code>
 </td>
 <td>
-(bool, optional) Allow multiple wandb.init() calls in the same
+(bool, optional) Allow multiple <code>wandb.init()</code> calls in the same
 process. (default: False)
 </td>
 </tr><tr>
@@ -204,7 +210,7 @@ process. (default: False)
 <td>
 (bool, dict, or str, optional) The bool controls whether we try to
 auto-instrument your script, capturing basic details of your run
-without you having to add more wandb code. (default: False)
+without you having to add more wandb code. (default: <code>False</code>)
 You can also pass a dict, json string, or yaml filename.
 </td>
 </tr><tr>
@@ -221,7 +227,7 @@ You can also pass a dict, json string, or yaml filename.
 </td>
 <td>
 (list, optional) string keys to include in
-wandb.config.
+<code>wandb.config</code>.
 </td>
 </tr><tr>
 <td>
@@ -229,13 +235,13 @@ wandb.config.
 </td>
 <td>
 (str, optional) Controls anonymous data logging. Options:
-- "never" (default): requires you to link your W&B account before
+- `"never"` (default): requires you to link your W&B account before
 tracking the run so you don't accidentally create an anonymous
 run.
-- "allow": lets a logged-in user track runs with their account, but
+- `"allow"`: lets a logged-in user track runs with their account, but
 lets someone who is running the script without a W&B account see
 the charts in the UI.
-- "must": sends the run to an anonymous account instead of to a
+- `"must"`: sends the run to an anonymous account instead of to a
 signed-up user account.
 </td>
 </tr><tr>
@@ -243,7 +249,7 @@ signed-up user account.
 <code>mode</code>
 </td>
 <td>
-(str, optional) Can be "online", "offline" or "disabled". Defaults to
+(str, optional) Can be `"online"<code>, </code>"offline"<code> or </code>"disabled"`. Defaults to
 online.
 </td>
 </tr><tr>
@@ -254,17 +260,17 @@ online.
 (bool, optional) Whether to allow config values to
 change after setting the keys once. By default we throw an exception
 if a config value is overwritten. If you want to track something
-like a varying learning_rate at multiple times during training, use
-wandb.log() instead. (default: False in scripts, True in Jupyter)
+like a varying learning rate at multiple times during training, use
+<code>wandb.log()</code> instead. (default: <code>False</code> in scripts, <code>True</code> in Jupyter)
 </td>
 </tr><tr>
 <td>
 <code>force</code>
 </td>
 <td>
-(bool, optional) If True, this crashes the script if a user isn't
-logged in to W&B. If False, this will let the script run in offline
-mode if a user isn't logged in to W&B. (default: False)
+(bool, optional) If <code>True</code>, this crashes the script if a user isn't
+logged in to W&B. If <code>False</code>, this will let the script run in offline
+mode if a user isn't logged in to W&B. (default: <code>False</code>)
 </td>
 </tr><tr>
 <td>
@@ -272,15 +278,15 @@ mode if a user isn't logged in to W&B. (default: False)
 </td>
 <td>
 (bool, optional) Synchronize wandb logs from tensorboard or
-tensorboardX and saves the relevant events file. (default: False)
+tensorboardX and saves the relevant events file. (default: <code>False</code>)
 </td>
 </tr><tr>
 <td>
 <code>monitor_gym</code>
 </td>
 <td>
-(bool, optional) automatically logs videos of environment when
-using OpenAI Gym. (default: False)
+(bool, optional) Automatically logs videos of environment when
+using OpenAI Gym. (default: <code>False</code>)
 See https://docs.wandb.com/library/integrations/openai-gym
 </td>
 </tr><tr>
@@ -288,7 +294,7 @@ See https://docs.wandb.com/library/integrations/openai-gym
 <code>id</code>
 </td>
 <td>
-(str, optional) A unique ID for this run, used for Resuming. It must
+(str, optional) A unique ID for this run, used for resuming. It must
 be unique in the project, and if you delete a run you can't reuse
 the ID. Use the name field for a short descriptive name, or config
 for saving hyperparameters to compare across runs. The ID cannot

@@ -3,7 +3,7 @@
 <!-- Insert buttons and diff -->
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.28/wandb/__init__.py)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.30/wandb/__init__.py)
 
 
 
@@ -34,7 +34,7 @@
 
 [`summary(...)`](./summary.md): Tracks single values for each metric for each run.
 
-[`sweep(...)`](./sweep.md)
+[`sweep(...)`](./sweep.md): Initialize a hyperparameter sweep.
 
 [`watch(...)`](./watch.md): Hooks into the torch model to collect gradients and the topology.  Should be extended
 
@@ -49,7 +49,7 @@
 __version__<a id="__version__"></a>
 </td>
 <td>
-`'0.10.28'`
+`'0.10.30'`
 </td>
 </tr>
 </table>
