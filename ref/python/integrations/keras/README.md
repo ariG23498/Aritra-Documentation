@@ -8,7 +8,7 @@
 
 
 
-Tools for integrating <code>wandb</code> with `[Keras](https://keras.io/)<code>, a deep learning API for </code>[TensorFlow](https://www.tensorflow.org/)`.
+Tools for integrating <code>wandb</code> with [`Keras`](https://keras.io/), a deep learning API for [`TensorFlow`](https://www.tensorflow.org/).
 
 
 Use the <code>WandbCallback</code> to add <code>wandb</code> logging to any <code>Keras</code> model.
