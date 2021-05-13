@@ -258,41 +258,6 @@ processors where appropriate.
 
 ## Methods
 
-<h3 id="on_epoch_begin"><code>on_epoch_begin</code></h3>
-
-<pre><code>on_epoch_begin(
-    epoch, logs=None
-)</code></pre>
-
-Called at the start of an epoch.
-
-Subclasses should override for any actions to run. This function should only
-be called during TRAIN mode.
-
-<!-- Tabular view -->
-<table>
-<tr><th>Arguments</th></tr>
-
-<tr>
-<td>
-<code>epoch</code>
-</td>
-<td>
-Integer, index of epoch.
-</td>
-</tr><tr>
-<td>
-<code>logs</code>
-</td>
-<td>
-Dict. Currently no data is passed to this argument for this method
-but that may change in the future.
-</td>
-</tr>
-</table>
-
-
-
 <h3 id="set_model"><code>set_model</code></h3>
 
 <a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.31.dev1/wandb/integration/keras/keras.py#L446-L455">View source</a>
