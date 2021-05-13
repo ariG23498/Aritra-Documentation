@@ -14,5 +14,5 @@
 
 ## Modules
 
-[`keras`](./keras) module: wandb integration keras module.
+[`keras`](./keras) module: Tools for integrating <code>wandb</code> with `[Keras](https://keras.io/)<code>, a deep learning API for </code>[TensorFlow](https://www.tensorflow.org/)`.
 
