@@ -2,7 +2,7 @@
 
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.31.dev1/wandb/sdk/wandb_run.py#L216-L2360)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.31.dev1/wandb/sdk/wandb_run.py#L216-L2366)
 
 
 
@@ -792,6 +792,15 @@ An <code>Artifact</code> object if code was logged
 </table>
 
 
+
+<h3 id="mark_preempting"><code>mark_preempting</code></h3>
+
+<a target="_blank" href="https://www.github.com/wandb/client/tree/v0.10.31.dev1/wandb/sdk/wandb_run.py#L2362-L2366">View source</a>
+
+<pre><code>mark_preempting() -> None</code></pre>
+
+Mark this run as preempting and tell the internal process
+to immediately report this to the server.
 
 <h3 id="plot_table"><code>plot_table</code></h3>
 
