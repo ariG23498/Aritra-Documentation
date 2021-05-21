@@ -1,61 +1,85 @@
-# wandb.data\_types.Audio
+# Audio
+
+
 
 [![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/v0.10.31.dev1/wandb/data_types.py#L877-L1021)
 
+
+
 Wandb class for audio clips.
 
-```text
+```python
 Audio(
     data_or_path, sample_rate=None, caption=None
 )
 ```
 
+
+
+
+
 | Arguments |  |
 | :--- | :--- |
-|  `data_or_path` |  \(string or numpy array\) A path to an audio file or a numpy array of audio data. |
-|  `sample_rate` |  \(int\) Sample rate, required when passing in raw numpy array of audio data. |
-|  `caption` |  \(string\) Caption to display with audio. |
+|  `data_or_path` |  (string or numpy array) A path to an audio file or a numpy array of audio data. |
+|  `sample_rate` |  (int) Sample rate, required when passing in raw numpy array of audio data. |
+|  `caption` |  (string) Caption to display with audio. |
+
+
 
 ## Methods
 
-### `durations` <a id="durations"></a>
+<h3 id="durations"><code>durations</code></h3>
 
 [View source](https://www.github.com/wandb/client/tree/v0.10.31.dev1/wandb/data_types.py#L979-L981)
 
-```text
+```python
 @classmethod
 durations(
     audio_list
 )
 ```
 
-### `path_is_reference` <a id="path_is_reference"></a>
+
+
+
+<h3 id="path_is_reference"><code>path_is_reference</code></h3>
 
 [View source](https://www.github.com/wandb/client/tree/v0.10.31.dev1/wandb/data_types.py#L922-L924)
 
-```text
+```python
 @classmethod
 path_is_reference(
     path
 )
 ```
 
-### `resolve_ref` <a id="resolve_ref"></a>
+
+
+
+<h3 id="resolve_ref"><code>resolve_ref</code></h3>
 
 [View source](https://www.github.com/wandb/client/tree/v0.10.31.dev1/wandb/data_types.py#L995-L1007)
 
-```text
+```python
 resolve_ref()
 ```
 
-### `sample_rates` <a id="sample_rates"></a>
+
+
+
+<h3 id="sample_rates"><code>sample_rates</code></h3>
 
 [View source](https://www.github.com/wandb/client/tree/v0.10.31.dev1/wandb/data_types.py#L983-L985)
 
-```text
+```python
 @classmethod
 sample_rates(
     audio_list
 )
 ```
+
+
+
+
+
 

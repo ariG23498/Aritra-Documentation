@@ -25,7 +25,7 @@
       * [wandb artifact put](ref/cli/wandb-artifact/wandb-artifact-put.md)
       * [wandb artifact cache](ref/cli/wandb-artifact/wandb-artifact-cache/README.md)
         * [wandb artifact cache cleanup](ref/cli/wandb-artifact/wandb-artifact-cache/wandb-artifact-cache-cleanup.md)
-    * [wandb docker run](ref/cli/wandb-docker-run.md)
+    * [wandb docker run](ref/cli/wandb-docker-run/README.md)
   * [Python Library](ref/python/README.md)
     * [wandb.Artifact](ref/python/artifact.md)
     * [wandb.Run](ref/python/run.md)
